@@ -2,6 +2,7 @@
 
 - fork the repository
 - clone the repository
+- **no work should be carried out on the MAIN branch**
 - create a branch with your issue name(e.g we working on navbar issue... run **git checkout -b navbar** )
 - when you're done with your task run **git add .**
 - then **git commit -m"your commit message"** (eg git commit -m "added toogle button on the navbar")

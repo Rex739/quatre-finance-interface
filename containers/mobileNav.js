@@ -1,5 +1,5 @@
-import TopBar from "./mobileTopbar";
-import MobileNavList from './mobileNavList';
+import TopBar from "../components/mobileTopbar";
+import MobileNavList from '../components/mobileNavList';
 
 const MobileNav = ({handleClick, isClicked}) => {
     return (

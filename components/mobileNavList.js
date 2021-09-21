@@ -7,6 +7,11 @@ const MobileNavList = ({ isClicked, handleClick }) => {
             <ul className={isClicked ? "d-flex list-unstyled m-0" : "d-none list-unstyled m-0"}>
                 <li onClick={handleClick}>
                     <ActiveLink href="/">
+                        <img src="images/home.svg" alt="home" width={32} height={20} className="mr-1" /> Home
+                    </ActiveLink>
+                </li>
+                <li onClick={handleClick}>
+                    <ActiveLink href="/">
                         <img src="images/farm.svg" alt="farm" width={32} height={20} className="mr-1" /> Farm
                     </ActiveLink>
                 </li>

@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import styles from '../styles/local/components/navbar.module.css'
-import { useRef } from 'react';
 import ActiveLink from './activeLink';
-import Image from 'next/image'
-import MobileNav from './mobileNav';
 
 const DesktopNav = () => {
     return ( 

@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import MobileNav from '../components/mobileNav';
+import MobileNav from './mobileNav';
 import DesktopNav from '../components/desktopNav';
 
 const Navbar = ({ handleClick, isClicked }, props) => {

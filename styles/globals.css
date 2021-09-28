@@ -9,10 +9,14 @@ html{
 }
 @media all and (min-width: 0px){
     .wrapper{
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
 		overflow: hidden;
 	}
+	.activeLink{
+		background: var(--white);
+		border-left: 5px solid var(--orange);
+   }
 	.section-heading h1{
 		font: 2rem/3.2rem var(--Montserrat);
 		font-weight: 500;
@@ -70,7 +74,6 @@ html{
     }
 	.error-button a:hover{
 		text-decoration: none;
-
 	}
 }
 @media all and (min-width: 400px){
@@ -133,4 +136,14 @@ html{
 	.wrapper{
 		width: 1440px;
 	}
+}
+/* sun icon */
+.bi-sun-fill{
+	color: var(--granny-apple);
+	font-size: 20px;
+}
+/* moon icon */
+.bi-moon-fill{
+	color: var(--granny-apple);
+	font-size: 20px;
 }

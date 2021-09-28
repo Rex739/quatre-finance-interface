@@ -1,21 +1,29 @@
 import { useRouter } from 'next/router'
 
-const ActiveLink = ({ children, href }) => {
+const ActiveLink = ({ handleClick, children, href }) => {
     const router = useRouter()
-    const style = {
-        marginRight: 10,
-        color: router.asPath === href ? '#61DAFB' : null,
+    const listStyle = {
+        marginRight: 5,
+        background: router.asPath === href ? '#FFFFFF' : null,
+        borderLeft: router.asPath === href ? ' 5px solid #F7931A' : null,
     }
 
-    const handleClick = (e) => {
+    const linkStyle = {
+        color: router.asPath === href ? '#266150' : null,
+    }
+
+    const handleActiveClick = (e) => {
         e.preventDefault()
         router.push(href)
     }
 
     return (
-        <a href={href} onClick={handleClick} style={style}>
-            {children}
-        </a>
+        <li onClick={handleClick} style={listStyle}>
+            <a href={href} onClick={handleActiveClick} style={linkStyle}>
+                {children}
+            </a>
+        </li>
+       
     )
 }
 

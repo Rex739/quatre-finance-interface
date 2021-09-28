@@ -1,0 +1,235 @@
+@media all and (min-width: 0px){
+  .sectionContainer {
+    padding: 5rem 0 2rem 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .sectionContent div{
+    z-index: 2;
+    position: relative;
+  }
+  .sectionContent div h1{
+    font: 2.063rem/2.813rem var(--roboto);
+    font-weight: 700;
+  }
+  .sectionContent h2{
+    font: 1.375rem/1.813rem var(--roboto);
+    font-weight: 700;
+  }
+  .sectionContent h3{
+    font: 1.188rem/1.375rem var(--roboto);
+    font-weight: 500;
+  }
+  .sectionContent h4{
+    display: none;
+  }
+  .inputWrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    width: 95%;
+    z-index: 1;
+    margin: 2rem 0
+  }
+  .inputWrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .tradeBtn{
+    background: var(--orange);
+    transition: 0.2s ease-in-out;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    max-width: 100%;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+  }
+  .subscribeBtn{
+    background: var(--orange);
+    transition: 0.2s ease-in-out;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius:0 5px 5px 0;
+  }
+  .subscribeBtn a, .tradeBtn a{
+    font: 0.813rem/0.938rem var(--roboto);
+    text-decoration: none;
+  }
+  .form::placeholder{
+    padding-left: 1.5rem;
+    width: 400px;
+    font: 0.813rem/0.938rem var(--roboto);
+    color: var(--white)
+  }
+  .form{
+    height: 40px;
+    max-width: 100%;
+    min-width: 50px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    border: none;
+    background: var(--black);
+  }
+  .inputWrapper div{
+    margin: 0.5rem 0;
+  }
+  .inputWrapper div input[type=email]:focus{
+    font: 0.813rem/0.938rem var(--roboto);
+    color: var(--white);
+    padding-left: 1.5rem;
+  }
+  .heroImg{
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+    right: 5%;
+  }
+  .desktopHeroImg{
+    display: none;
+  }
+}
+@media all and (min-width: 375px){
+  .tradeBtn{
+    height: 40px;
+    max-width: 90px;
+    min-width: 90px;
+  }
+  .subscribeBtn{
+    height: 40px;
+    width: 85px;
+  }
+  .form{
+    height: 40px;
+    width: 138px;
+  }
+  .inputWrapper{
+    flex-direction: row;
+    width: 100%;
+  }
+  .inputWrapper div{
+    margin: 0 0 0 20px;
+  }
+}
+@media all and (min-width: 425px){
+  .tradeBtn{
+    background: var(--orange);
+    height: 40px;
+    max-width: 128px;
+    min-width: 128px;
+  }
+  .form{
+    height: 40px;
+    width: 150px;
+  }
+}
+@media all and (min-width: 1024px){
+  .sectionContent{
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 0 5rem 0;
+  }
+  .heroImg{
+    display: none;
+  }
+  .desktopHeroImg{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    margin-left: auto
+  }
+  .sectionContent div h1{
+    font: 3.688rem/5rem var(--roboto);
+    font-weight: 700;
+  }
+  .sectionContent h2{
+    font: 2.5rem/4rem var(--roboto);
+    font-weight: 700;
+  }
+  .sectionContent h3{
+    font: 2rem/2.3rem var(--roboto);
+    font-weight: 500;
+  }
+   .sectionContent h4{
+    font: 2rem/2.3rem var(--roboto);
+    font-weight: 400;
+    opacity: 0.5;
+    display: block;
+  }
+  .tradeBtn{
+    height: 52px;
+    max-width: 158px;
+    min-width: 158px;
+  }
+  .tradeBtn:hover, .subscribeBtn:hover{
+    background: var(--plantation-green);
+    transition: 0.2s ease-in-out;
+  }
+  .subscribeBtn{
+    height: 52px;
+    width: 109px;
+  }
+  .subscribeBtn a, .tradeBtn a{
+    font: 1rem/1.125rem var(--roboto);
+    text-decoration: none;
+  }
+  .form{
+    height: 52px;
+    width: 281px;
+  }
+  .inputWrapper {
+    margin: 5rem 0;
+  }
+}
+@media all and (min-width: 1440px){
+  .sectionContent div h1{
+    font: 4.688rem/5.494rem var(--roboto);
+    font-weight: 700;
+  }
+  .sectionContent h2{
+    font: 3rem/3.5rem var(--roboto);
+    font-weight: 700;
+  }
+  .sectionContent h3{
+    font: 2rem/2.3rem var(--roboto);
+    font-weight: 500;
+  }
+  .desktopHeroImg{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: auto
+  }
+}
+/* Light and dark mode */
+.darkMode{
+  background: var(--plantation-green);
+  background-image: url("/images/bg-pattern.svg");
+  color: var(--black);
+  z-index: 0;
+}
+.darkMode a {
+  color: var(--white
+  )
+}
+.lightMode{ 
+  background: var(--deep-fir-green);
+  background-image: url("/images/bg-pattern.svg");
+  color: var(--white);
+  z-index: 0;
+}
+.lightMode a {
+  color: var(--white
+  )
+}

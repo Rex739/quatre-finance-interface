@@ -1,27 +1,23 @@
 // Page Layout
-
 // Navbar and Footer Component
 import Footer from "./footer";
-import Navbar from "../containers/navbar";
-import { useState } from "react";
+import Navbar from "./appNavBar/navbar";
 
-const Layout = ({ children }) => {
-    const [isClicked, setClicked] = useState(false);
-
-    const handleClick = () => {
-        setClicked(!isClicked);
-        console.log("worked")
-    }
+const Layout = ({ handleClick, isClicked, toggleMode, lightMode, children }) => {
     return (
-        <div className="content">
+        <main>
             <Navbar
                 handleClick={handleClick}
                 isClicked={isClicked}
+                toggleMode ={toggleMode}
+                lightMode = {lightMode }
             />
             {children}
-            <Footer />
-        </div>
-
+            <Footer
+                toggleMode={toggleMode}
+                lightMode={lightMode}
+            />
+        </main>
     );
 }
 

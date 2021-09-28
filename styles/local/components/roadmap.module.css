@@ -1,0 +1,124 @@
+@media all and (min-width: 0px){
+    .sectionContainer{
+        padding: 1.25rem 0;
+    }
+    .sectionContent h2{
+        font: 1.125rem/1rem var(--roboto);
+        color: var(--dark-grey);
+        font-weight: bold;
+        text-align: center;
+    }
+    .sectionContent h1{
+        font: 1.75rem/2rem var(--roboto);
+        font-weight: bold;
+        text-align: center;
+    }
+    .slideWrapper{
+        margin: 1.5rem 0;
+    }
+    .slideWrapper h2{
+        font: 0.938rem/1rem var(--roboto)!important;
+        font-weight: 700 !important;
+        color: var(--persian-green) !important;
+        text-align: left !important;
+    }   
+     .slideWrapper h1{
+        font: 1.125rem/1rem var(--roboto)!important;
+        font-weight: bold !important;
+        color: var(--dark-grey) !important;
+        text-align: left !important;
+    }   
+    .listVector{
+        display: flex;
+        flex-direction: row;
+    }
+    .listVector:first-child{
+        background: var(--orange);
+        border-radius: 50%;
+        height: 19px;
+        width: 19px;
+    }
+    .line{
+        background: var(--grey-green);
+        height: 265px;
+        width: 3px;
+        margin: 1.17rem auto;
+    }
+    .slideWrapper div ul li{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        background: url("/images/check.svg") no-repeat 0 0;
+        background-position: left center;
+        padding: 0rem 0 0 1.3rem ;
+        margin: 0.5rem auto;
+        font: 0.75rem/1.2rem var(--roboto);  
+    }
+}
+@media all and (min-width: 375px){
+    
+}
+@media all and (min-width: 500px){
+   
+}
+@media all and (min-width: 768px){
+    .sectionContent h2{
+        font: 1.5rem/1.8rem var(--roboto);
+        color: var(--dark-grey);
+        font-weight: bold;
+    }
+    .sectionContent h1{
+        font: 2rem/2rem var(--roboto);
+        font-weight: bold;
+    }
+}   
+@media all and (min-width: 1024px){
+    .slideWrapper{
+        margin: 3rem 0;
+    }
+    .sectionContent h2{
+        font: 1.5rem/2.4rem var(--roboto);
+        color: var(--dark-grey);
+        font-weight: bold;
+        text-align: center;
+    }
+    .sectionContent h1{
+        font: 3.125rem/2rem var(--roboto);
+        font-weight: bold;
+        text-align: center;
+    }
+    .slideWrapper div ul li{
+        font: 1.125rem/2rem var(--roboto);
+        margin: 0.5rem auto;  
+    }
+}
+@media all and (min-width: 1440px){
+    .sectionContainer{
+        padding: 2rem 0;
+    }
+     .slideWrapper div ul li{
+        font: 1.25rem/2rem var(--roboto);
+        margin: 0.5rem auto;  
+    }
+
+}
+
+/* Light and dark mode */
+.darkMode{
+  background: var(--deep-fir-green);
+  background-image: url("/images/bg-pattern1.svg");
+  color: var(--black);
+  z-index: 0;
+}
+.darkMode a {
+  color: var(--white)
+}
+.lightMode{ 
+  background: var(--white);
+  background-image: url("/images/bg-pattern1.svg");
+  color: var(--black);
+  z-index: 0;
+}
+.lightMode a {
+  color: var(--white)
+}

@@ -1,8 +1,8 @@
 import { useRef } from 'react';
 import MobileNav from './mobileNav';
-import DesktopNav from '../components/desktopNav';
+import DesktopNav from './desktopNav';
 
-const Navbar = ({ handleClick, isClicked }, props) => {
+const Navbar = ({ handleClick, isClicked, toggleMode, lightMode }, props) => {
     const safeDocument = typeof document !== 'undefined' ? document : {};
     const scrollBlocked = useRef();
     const html = safeDocument.documentElement;
@@ -40,13 +40,16 @@ const Navbar = ({ handleClick, isClicked }, props) => {
 
     return (
         <header>
-            <div className="wrapper">
-                <MobileNav 
-                    handleClick = { handleClick }  
-                    isClicked = { isClicked }  
-                />
-                <DesktopNav />
-            </div>
+            <MobileNav 
+                handleClick = { handleClick }  
+                isClicked = { isClicked } 
+                toggleMode = { toggleMode } 
+                lightMode={lightMode}
+            />
+            <DesktopNav 
+                toggleMode={toggleMode}
+                lightMode={lightMode}
+            />
         </header>
     );
 }

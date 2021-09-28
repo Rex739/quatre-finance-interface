@@ -1,0 +1,105 @@
+@media all and (min-width: 0px){
+  .sectionContainer {
+    position: relative;
+    padding: 1rem 0;
+    display: flex;
+  }
+  .sectionContainer article:first-child{
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      top: -30px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      justify-content: center;
+      z-index: 10;
+      overflow-x: auto;
+  }
+  .sectionContainer article:nth-child(2){
+      display: none;
+  }
+  .sectionContainer article div img {
+      width: 60px;
+  }
+  .sectionContainer article::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media all and (min-width: 375px){
+  .sectionContainer {
+    padding: 1.5rem 0;;
+  }
+  .sectionContainer article:first-child{
+      top: -40px;
+  }
+  .sectionContainer article div img {
+      width: 80px;
+  }
+}
+@media all and (min-width: 768px){
+  .sectionContainer {
+    padding: 2rem 0;;
+  }
+  .sectionContainer article:first-child{
+      display: none;
+  }
+  .sectionContainer article:nth-child(2){
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      top: -60px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      justify-content: center;
+      z-index: 10;
+      overflow-x: hidden;
+      overflow: hidden;
+  }
+  .sectionContainer article div img {
+    width: 180px;
+    height: auto;
+  } 
+}   
+@media all and (min-width: 1024px){
+  .sectionContainer article:nth-child(2){
+    top: -70px;
+  }
+  .sectionContainer {
+    padding: 3em 0;;
+  }
+  .sectionContainer article div img {
+    width: 220px;
+    height: auto;
+  }
+}
+@media all and (min-width: 1440px){
+  .sectionContainer article:nth-child(2){
+      top: -80px;
+  }
+  .sectionContainer article div img {
+      width: auto;
+      height: auto;
+      margin: 0 2.5rem
+  }
+}
+/* Light and dark mode */
+.darkMode{
+  background: transparent;
+  background-image: url("/images/bg-pattern1.svg");
+  color: var(--black);
+  z-index: 0;
+}
+.darkMode a {
+  color: var(--white)
+}
+.lightMode{ 
+  background: transparent;
+  background-image: url("/images/bg-pattern1.svg");
+  color: var(--white);
+  z-index: 0;
+}
+.lightMode a {
+  color: var(--white)
+}

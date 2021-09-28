@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import styles from '../styles/local/components/navbar.module.css'
-import ActiveLink from './activeLink';
+import styles from '../../styles/local/components/navbar.module.css'
 
-const DesktopNav = () => {
+const DesktopNav = ({lightMode, toggleMode}) => {
     return ( 
-        <div className={styles.desktopNav}>
-            <nav className={styles.topNav}>
+        <div className={ lightMode ?  [styles.lightMode, styles.desktopNav].join(" ")  : [styles.darkMode, styles.desktopNav].join(" ")}>
+            <nav className={[styles.topNav, 'wrapper'].join(" ")}>
                 <ul className="d-flex list-unstyled my-3">
                     <li className="m-0">
                         <Link href="/">
@@ -15,35 +14,36 @@ const DesktopNav = () => {
                         </Link>
                     </li>
                     <li className="my-auto ms-auto">
-                        <ActiveLink href="/">
+                        <a href="/">
                             <img src="images/farm.svg" alt="farm" width={32} height={20} className="mr-1" /> Farm
-                        </ActiveLink>
+                        </a>
                     </li>
                     <li className="my-auto">
-                        <ActiveLink href="/">
+                        <a href="/">
                             <img src="images/app.svg" alt="app" width={32} height={20} className="mr-1" /> App
-                        </ActiveLink>
+                        </a>
                     </li>
                     <li className="my-auto">
-                        <ActiveLink href="/">
+                        <a href="/">
                             <img src="images/team.svg" alt="team" width={32} height={20} className="mr-1" /> Team
-                        </ActiveLink>
+                        </a>
                     </li>
                     <li className="my-auto">
-                        <ActiveLink href="/">
+                        <a href="/">
                             <img src="images/contact.svg" alt="contact" width={32} height={20} className="mr-1" /> Contact
-                        </ActiveLink>
+                        </a>
                     </li>
                     <li className="my-auto">
-                        <ActiveLink href="/">
+                        <a href="/">
                             <img src="images/github.svg" alt="github" width={32} height={20} className="mr-1" /> Github
-                        </ActiveLink>
+                        </a>
                     </li>
                     <li className="my-auto">
-                        <ActiveLink href="/">
+                        <a href="/">
                             <img src="images/docs.svg" alt="docs" width={32} height={20} className="mr-1" /> Docs
-                        </ActiveLink>
+                        </a>
                     </li>
+                    {/* <i onClick={toggleMode} className={lightMode ? "bi bi-sun-fill sun-icon  my-auto px-2" : "bi bi-moon-fill moon-icon my-auto px-2"}></i> */}
                 </ul>
             </nav>
         </div>

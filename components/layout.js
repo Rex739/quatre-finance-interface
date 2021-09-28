@@ -1,16 +1,17 @@
 // Page Layout
 // Navbar and Footer Component
+import Navbar from "./appNavbar/navbar";
 import Footer from "./footer";
-import Navbar from "./appNavBar/navbar";
+
 
 const Layout = ({ handleClick, isClicked, toggleMode, lightMode, children }) => {
     return (
         <main>
-            <Navbar
+            <Navbar 
                 handleClick={handleClick}
                 isClicked={isClicked}
-                toggleMode ={toggleMode}
-                lightMode = {lightMode }
+                toggleMode={toggleMode}
+                lightMode={lightMode}
             />
             {children}
             <Footer

@@ -24,9 +24,6 @@ const RoadMap = ({ lightMode }, props) => {
             setPause(false)
         },  
     })
-    useEffect(()=> {
-        setWidth(window.innerWidth);
-    },[]) 
     React.useEffect(() => {
         sliderRef.current.addEventListener("mouseover", () => {
             setPause(true)
@@ -46,10 +43,15 @@ const RoadMap = ({ lightMode }, props) => {
             clearInterval(timer.current)
         }
     }, [pause, slider])
+    useEffect(() => {
+        setWidth(window.innerWidth);
+    }, [])
+
     useEffect(()=> {
         width  >= 768 ? setCount(2) : setCount(1);
         console.log(width)
-    },[])
+    }, [width])
+
     return (
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}>
             <div className={["navigation-wrapper wrapper ", styles.sectionContent].join(" ")}>

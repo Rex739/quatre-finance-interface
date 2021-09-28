@@ -16,7 +16,7 @@ const TopBar = ({isClicked, handleClick, toggleMode, lightMode}) => {
                 </li>
                 {/* <i onClick={toggleMode} className={lightMode ? "bi bi-sun-fill sun-icon ms-auto my-auto px-2" : "bi bi-moon-fill moon-icon ms-auto my-auto px-2"}></i> */}
                 {/* hamburger button */}
-                <div className={isClicked ? "py-2 " : "my-auto "} onClick={handleClick}>
+                <div className={isClicked ? "py-2 ms-auto " : "my-auto ms-auto"} onClick={handleClick}>
                     <div className={isClicked ? [styles.hamburger, styles.hamburgerX].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
                     <div className={isClicked ? [styles.hamburger, styles.hamburgerX2].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")}></div>
                     <div className={isClicked ? [styles.hamburger, styles.ln3].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>

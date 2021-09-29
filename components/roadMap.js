@@ -112,6 +112,24 @@ const RoadMap = ({ lightMode }, props) => {
                             </ul>
                         </div>
                     </div>
+                    <div className={["keen-slider__slide number-slide2", styles.slideWrapper].join(" ")}>
+                        <h2>PHASE 2</h2>
+                        <h1>NOVEMBER  2021</h1>
+                        <div>
+                            <div className={styles.listVector}>
+                                <div></div>
+                                <div className={styles.line}></div>
+                            </div>
+                            <ul>
+                                <li>Presale and airdrop end.</li>
+                                <li>Operational and strategic marketing begin.</li>
+                                <li>Product 2 goes live.</li>
+                                <li>Pancakeswap listing and relevant exchange listing. </li>
+                                <li>Market serialization and integration of QFOUR Token</li>
+                                <li>Farming begins.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div> 
                 {slider && (
                     <div className="d-flex justify-content-end">

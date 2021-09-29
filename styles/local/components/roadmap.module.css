@@ -14,12 +14,12 @@
         text-align: center;
     }
     .slidesContainer{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
     .slideWrapper{
         margin: 1.5rem 0;
-        width: 2%;
+        width: 100%;
     }
     .slideWrapper h2{
         font: 0.938rem/1rem var(--roboto)!important;

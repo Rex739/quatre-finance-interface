@@ -57,7 +57,7 @@ const RoadMap = ({ lightMode }, props) => {
             <div className={["navigation-wrapper wrapper ", styles.sectionContent].join(" ")}>
                 <h2>History Timeline</h2>
                 <h1>Development Roadmap</h1>
-                <div ref={sliderRef} className="keen-slider">
+                <div ref={sliderRef} className="keen-slider wrapper">
                     <div className={["keen-slider__slide number-slide1", styles.slideWrapper].join(" ")}>
                         <h2>PHASE 1</h2>
                         <h1>OCTOBER  2021</h1>

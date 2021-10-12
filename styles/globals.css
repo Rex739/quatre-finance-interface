@@ -19,7 +19,6 @@ html{
 	.cards:hover{
 		transform: scaleX(1.05);
 		transition: 0.5s ease;
-		
 	}
 }
 @media all and (min-width: 400px){

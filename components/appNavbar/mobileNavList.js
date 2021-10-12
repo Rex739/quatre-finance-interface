@@ -12,7 +12,7 @@ const MobileNavList = ({ isClicked, handleClick, lightMode }) => {
                     <ActiveLink href="#" handleClick={handleClick}>
                         <img src="images/farm.svg" alt="farm" width={32} height={20} className="me-2" /> Farm
                     </ActiveLink>
-                    <ActiveLink href="3" handleClick={handleClick}>
+                    <ActiveLink href="#" handleClick={handleClick}>
                         <img src="images/app.svg" alt="app" width={32} height={20} className="me-2" /> App
                     </ActiveLink>
                     <ActiveLink href="/#team " handleClick={handleClick}>

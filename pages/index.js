@@ -4,12 +4,13 @@ import AppServices2 from '../components/appServices2'
 import Cards from '../components/cards'
 import Hero from '../components/hero'
 import RoadMap from '../components/roadMap'
+import Team from '../components/team/team'
 import Whitepaper from '../components/whitepaper'
 
 // import components
 
 
-const Home = ({lightMode }) => {
+const Home = ({lightMode, handleAlert }) => {
   return (
     <>
       <Head>
@@ -19,6 +20,7 @@ const Home = ({lightMode }) => {
         {/* render components here */}
         <Hero
           lightMode={lightMode}
+          handleAlert={handleAlert}
         />
         <Cards 
           lightMode={lightMode}
@@ -33,6 +35,9 @@ const Home = ({lightMode }) => {
           lightMode={lightMode}
         />
         <Whitepaper 
+          lightMode={lightMode}
+        />
+        <Team 
           lightMode={lightMode}
         />
       </main>

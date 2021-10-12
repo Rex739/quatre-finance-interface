@@ -9,7 +9,7 @@
   .mobileNavWrapper{
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 5;
     height: 100vh;
     width: 75%;
@@ -90,7 +90,7 @@
     margin: auto 0
   }
   .hideMobileNav{
-    left: -1024px;
+    right: -1024px;
   }
   .nav,.ln3,.desktopNav{
     display: none;

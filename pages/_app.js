@@ -17,6 +17,10 @@ const MyApp = ({ Component, pageProps }) => {
   const toggleMode = () => {
     darkMode(!lightMode);
   }
+  const handleAlert = (e) => {
+    e.preventDefault()
+    return alert("coming soon")
+  }
 
   return (
     <Layout 
@@ -24,12 +28,14 @@ const MyApp = ({ Component, pageProps }) => {
       isClicked={isClicked}
       toggleMode={toggleMode}
       lightMode={lightMode}
+      handleAlert={handleAlert}
     >
       <Component {...pageProps} 
         handleClick={handleClick}
         isClicked={isClicked}
         toggleMode={toggleMode}
         lightMode={lightMode}
+        handleAlert={handleAlert}
       />
     </Layout>
   )

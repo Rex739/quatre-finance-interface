@@ -19,7 +19,7 @@ const TopBar = ({isClicked, handleClick, toggleMode, lightMode}) => {
                 <div className={isClicked ? "py-2 ms-auto " : "my-auto ms-auto"} onClick={handleClick}>
                     <div className={isClicked ? [styles.hamburger, styles.hamburgerX].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
                     <div className={isClicked ? [styles.hamburger, styles.hamburgerX2].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")}></div>
-                    <div className={isClicked ? [styles.hamburger, styles.ln3].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
+                    <div className={isClicked ? [styles.hamburger, "d-none"].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
                 </div>
             </ul>
         </section>

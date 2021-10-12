@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../../styles/local/components/navbar.module.css'
 
-const DesktopNav = ({lightMode, toggleMode}) => {
+const DesktopNav = ({ lightMode, toggleMode, handleAlert}) => {
     return ( 
         <div className={ lightMode ?  [styles.lightMode, styles.desktopNav].join(" ")  : [styles.darkMode, styles.desktopNav].join(" ")}>
             <nav className={[styles.topNav, 'wrapper'].join(" ")}>
@@ -14,21 +14,21 @@ const DesktopNav = ({lightMode, toggleMode}) => {
                         </Link>
                     </li>
                     <li className="my-auto ms-auto">
-                        <Link href="/">
-                            <a>
+                        <Link href="#">
+                            <a onClick={handleAlert}>
                                 <img src="images/farm.svg" alt="farm" width={32} height={20} className="mr-1" /> Farm
                             </a>
                         </Link>
                     </li>
                     <li className="my-auto">
-                        <Link href="/">
-                            <a>
+                        <Link href="#">
+                            <a onClick={handleAlert}>
                                 <img src="images/app.svg" alt="app" width={32} height={20} className="mr-1" /> App
                             </a>
                         </Link>
                     </li>
                     <li className="my-auto">
-                        <Link href="/">
+                        <Link href="/#team">
                             <a>
                                 <img src="images/team.svg" alt="team" width={32} height={20} className="mr-1" /> Team
                             </a>
@@ -42,15 +42,15 @@ const DesktopNav = ({lightMode, toggleMode}) => {
                         </Link>
                     </li>
                     <li className="my-auto">
-                        <Link href="/">
-                            <a>
+                        <Link href="https://github.com/Quatre-Finance" >
+                            <a target="_newtab">
                                 <img src="images/github.svg" alt="github" width={32} height={20} className="mr-1" /> Github
                             </a>
                         </Link>
                     </li>
                     <li className="my-auto">
-                        <Link href="/">
-                            <a>
+                        <Link href="https://medium.com/@QuatreFinance" >
+                            <a target="_newtab">
                                 <img src="images/docs.svg" alt="docs" width={32} height={20} className="mr-1" /> Docs
                             </a>
                         </Link>

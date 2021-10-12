@@ -9,22 +9,22 @@ const MobileNavList = ({ isClicked, handleClick, lightMode }) => {
                     <ActiveLink href="/" handleClick={handleClick}>
                         <img src="images/home.svg" alt="home" width={32} height={20} className="me-2" /> Home
                     </ActiveLink>
-                    <ActiveLink href="/farm" handleClick={handleClick}>
+                    <ActiveLink href="#" handleClick={handleClick}>
                         <img src="images/farm.svg" alt="farm" width={32} height={20} className="me-2" /> Farm
                     </ActiveLink>
-                    <ActiveLink href="/app" handleClick={handleClick}>
+                    <ActiveLink href="3" handleClick={handleClick}>
                         <img src="images/app.svg" alt="app" width={32} height={20} className="me-2" /> App
                     </ActiveLink>
-                    <ActiveLink href="/team " handleClick={handleClick}>
+                    <ActiveLink href="/#team " handleClick={handleClick}>
                         <img src="images/team.svg" alt="team" width={32} height={20} className="me-2" /> Team
                     </ActiveLink>
                     <ActiveLink href="/contact" handleClick={handleClick}>
                         <img src="images/contact.svg" alt="contact" width={32} height={20} className="me-2" /> Contact
                     </ActiveLink>
-                    <ActiveLink href="/github" handleClick={handleClick}>
+                    <ActiveLink href="https://github.com/Quatre-Finance" handleClick={handleClick}>
                         <img src="images/github.svg" alt="github" width={32} height={20} className="me-2" /> Github
                     </ActiveLink>
-                    <ActiveLink href="/docs" handleClick={handleClick}>
+                    <ActiveLink href="https://medium.com/@QuatreFinance" handleClick={handleClick}>
                         <img src="images/docs.svg" alt="docs" width={32} height={20} className="me-2" /> Docs
                     </ActiveLink>
                 </ul>

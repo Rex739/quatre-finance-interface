@@ -1,6 +1,6 @@
 import styles from '../styles/local/components/hero.module.css'
 
-const Hero = ({lightMode}) => {
+const Hero = ({ lightMode, handleAlert}) => {
     return ( 
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}> 
             <div className={[styles.sectionContent, "wrapper"].join(" ")}>
@@ -10,7 +10,7 @@ const Hero = ({lightMode}) => {
                     <h4>Four apps...simple to interact with and a wonderful experience.</h4>
                     <h3>Join our Four-peer lending and borrowing pool today.</h3>
                     <div className={styles.inputWrapper}>
-                        <button className={styles.tradeBtn}><a href="">Trade Now</a></button>
+                        <button onClick={handleAlert} className={styles.tradeBtn}><a href="#">Trade Now</a></button>
                         <div className="d-flex flex-row">
                             <form action="">
                                 <input className={styles.form} placeholder="Enter Address" type="email" required />

@@ -4,7 +4,7 @@ import Navbar from "./appNavbar/navbar";
 import Footer from "./footer";
 
 
-const Layout = ({ handleClick, isClicked, toggleMode, lightMode, children }) => {
+const Layout = ({ handleClick, isClicked, toggleMode, lightMode, children, handleAlert }) => {
     return (
         <main>
             <Navbar 
@@ -12,6 +12,7 @@ const Layout = ({ handleClick, isClicked, toggleMode, lightMode, children }) => 
                 isClicked={isClicked}
                 toggleMode={toggleMode}
                 lightMode={lightMode}
+                handleAlert={handleAlert}
             />
             {children}
             <Footer

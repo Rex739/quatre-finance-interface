@@ -1,0 +1,155 @@
+@media all and (min-width: 0px){
+  .sectionContainer{
+    padding: 3rem 0;
+  }
+  .sectionContent{
+    position: relative;
+  }
+  .imgWrap{
+    position: relative;
+    width: 277px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .teamImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+  }
+  .teamCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 277px;
+    margin: 2rem 0;
+  }
+  .socials{
+    position: absolute;
+    display: flex;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 1px 10px var(--navy-blue);
+    box-shadow: 0px -5px 10px 1px var(--navy-blue);
+    background: var(--navy-blue);
+    width: 240px;
+    transition: 0.2s ease;
+  }
+  .socials:hover{
+    box-shadow: inset 0px 0px 1px 10px var(--orange);
+    box-shadow: 0px -50px 100px 4px var(--orange);
+    background: var(--orange);
+    transition: 0.2s ease;
+  }
+  .socials a i{
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 0.5rem;
+    border: 2px solid transparent
+  }
+  .sectionContent h1{
+    font: 1.75rem/2rem var(--roboto);
+    font-weight: 700;
+    text-align: center;
+  }
+  .sectionContent p{
+    font: 1.25rem/1.65rem var(--roboto);
+    font-weight: 300;
+    text-align: center;
+  }
+  .teamCard h2{
+    font: 1.5rem/2.25rem var(--roboto);
+    font-weight: 700;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .teamCard h4{
+    font: 1rem/0.5rem var(--roboto);
+    font-weight: 700;
+    text-align: center;
+    color: var(--orange);
+  }
+}  
+@media all and (min-width: 1024px){
+  .sectionContent h1{
+    font: 3.125rem/3rem var(--roboto);
+    font-weight: 700;
+    text-align: center;
+  }
+  .sectionContent p{
+    font: 1.25rem/1.65rem var(--roboto);
+    font-weight: 300;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+  .teamImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 277px;
+  }
+  .socials{
+    width: 277px;
+  }
+}
+@media all and (min-width: 1440px){
+    
+
+}
+/* arrows */
+.arrowRight{
+  position: absolute;
+  z-index: 3;
+  bottom: 40%;
+  right: 0;
+}
+.arrowLeft{
+  position: absolute;
+  z-index: 3;
+  bottom: 40%;
+  left: 0;
+}
+.teamCard{
+   margin: 3rem 0;
+  }
+/* Light and dark mode */
+.darkMode{
+  background: var(--grey-green);
+  background-image: url("/images/bg-pattern1.svg");
+  color: var(--black);
+  z-index: 0;
+}
+.darkMode a {
+  color: var(--white)
+}
+.lightMode{ 
+  background: var(--grey-green);
+  background-image: url("/images/bg-pattern1.svg");
+  color: var(--black);
+  z-index: 0;
+}
+.lightMode .socialIcons:hover{
+  color: var(--black);
+}
+.lightMode h2{ 
+  color: var(--black);
+
+}
+.lightMode h2{ 
+  color: var(--black);
+
+}
+.lightMode a {
+  color: var(--white)
+}

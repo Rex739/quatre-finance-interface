@@ -3,6 +3,7 @@
     --black: #000000;
     --white: #FFFFFF;
     --orange: #F7931A;
+    --transparent-orange: rgba(247, 147, 26, 0.9);
     --deep-fir-green: #002A0E;
     --plantation-green: #266150;
     --shadow-green: #A3C9BE;
@@ -10,4 +11,5 @@
     --grey-green: #E6F0EE;
     --dark-grey: #455A64;
     --persian-green: #009C86;
+    --navy-blue: #001E49;
 }

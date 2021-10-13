@@ -36,6 +36,7 @@ const Home = ({lightMode, handleAlert }) => {
         />
         <Whitepaper 
           lightMode={lightMode}
+          handleAlert={handleAlert}
         />
         <Team 
           lightMode={lightMode}

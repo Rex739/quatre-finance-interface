@@ -19,7 +19,7 @@ const MyApp = ({ Component, pageProps }) => {
   }
   const handleAlert = (e) => {
     e.preventDefault()
-    return alert("coming soon")
+    return alert("still in development".toUpperCase())
   }
 
   return (

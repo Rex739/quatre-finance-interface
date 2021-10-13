@@ -52,7 +52,7 @@
       right: 0;
       left: 0;
       bottom: 0;
-      justify-content: center;
+      justify-content: flex-start;
       z-index: 10;
       overflow-x: hidden;
       overflow: hidden;
@@ -72,6 +72,9 @@
   .sectionContainer article div img {
     width: 220px;
     height: auto;
+  }
+  .sectionContainer article:nth-child(2){ 
+    justify-content: center;
   }
 }
 @media all and (min-width: 1440px){

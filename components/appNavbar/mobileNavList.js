@@ -1,7 +1,7 @@
 import styles from '../../styles/local/components/navbar.module.css'
 import ActiveLink from '../activeLink';
 
-const MobileNavList = ({ isClicked, handleClick, lightMode }) => {
+const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert }) => {
     return ( 
         <aside className={isClicked ? styles.mobileNavWrapper : styles.hideMobileNav}>
             <nav className={lightMode ? styles.lightMode : styles.darkMode}>
@@ -9,10 +9,10 @@ const MobileNavList = ({ isClicked, handleClick, lightMode }) => {
                     <ActiveLink href="/" handleClick={handleClick}>
                         <img src="images/home.svg" alt="home" width={32} height={20} className="me-2" /> Home
                     </ActiveLink>
-                    <ActiveLink href="#" handleClick={handleClick}>
+                    <ActiveLink href="#" handleClick={handleClick} handleAlert={handleAlert}>
                         <img src="images/farm.svg" alt="farm" width={32} height={20} className="me-2" /> Farm
                     </ActiveLink>
-                    <ActiveLink href="#" handleClick={handleClick}>
+                    <ActiveLink href="#" handleClick={handleClick} handleAlert={handleAlert}>
                         <img src="images/app.svg" alt="app" width={32} height={20} className="me-2" /> App
                     </ActiveLink>
                     <ActiveLink href="/#team " handleClick={handleClick}>

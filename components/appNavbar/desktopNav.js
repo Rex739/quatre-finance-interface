@@ -9,7 +9,7 @@ const DesktopNav = ({ lightMode, toggleMode, handleAlert}) => {
                     <li className="m-0">
                         <Link href="/">
                             <a>
-                                <img src="/images/logo.svg" alt="company logo" className="logo" width={85} height={85} />
+                                <img src="/images/logo.svg" alt="company logo" className="logo" width={120} height={85} />
                             </a>
                         </Link>
                     </li>

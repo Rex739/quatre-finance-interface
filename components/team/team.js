@@ -31,11 +31,11 @@ const Team = ({lightMode}, props) => {
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")} id="team">
             <div className={["navigation-wrapper wrapper ", styles.sectionContent].join(" ")}>
                 <h1>Our Team Members</h1>
-                <p>
+                {/* <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nullam est ex, imperdiet a scelerisque in, congue ut metus.
                     Pellentesque eu eros ante. Mauris id viverra ligula.
-                </p>
+                </p> */}
                 {slider && (
                     <>
                         <ArrowLeft

@@ -10,10 +10,10 @@ const Hero = ({ lightMode, handleAlert}) => {
                     <h4>Four apps...simple to interact with and a wonderful experience.</h4>
                     <h3>Join our Four-peer lending and borrowing pool today.</h3>
                     <div className={styles.inputWrapper}>
-                        <button onClick={handleAlert} className={styles.tradeBtn}><a href="#">Trade Now</a></button>
+                        <button onClick={handleAlert} className={styles.tradeBtn}><a href="#">Launch App</a></button>
                         <div className="d-flex flex-row">
                             <form action="">
-                                <input className={styles.form} placeholder="Enter Address" type="email" required />
+                                <input className={styles.form} placeholder="Enter Email Address" type="email" required />
                             </form>
                             <button className={styles.subscribeBtn} type="submit"><a href="">Subscribe</a></button>
                         </div>

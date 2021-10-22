@@ -8,8 +8,8 @@ const TopBar = ({isClicked, handleClick, toggleMode, lightMode}) => {
             <ul className="d-flex wrapper list-unstyled">
                 <li className="d-flex">
                     <Link href="/" >
-                        <a className="d-flex">
-                            <Image src="/images/logo.svg" alt="logo" className="logo my-auto" id="logo" width={66} height={40} />
+                        <a className="d-flex align-items-center">
+                            <Image src="/images/logo.png" alt="logo" className="logo my-auto d-flex" id="logo" width={66} height={25} />
                         </a>
                     </Link>
                     

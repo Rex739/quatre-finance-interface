@@ -14,9 +14,9 @@ const AppServices2 = ({ lightMode}) => {
                         {/* <a href="#" target="_newtab" onClick={handleAlert}> */}
                             Buy and Sell directly without a third party involvement. Your assets stays
                             with you and your worries about providing KYC and personal data are over. 
-                            You also enjoy the benefits of being part of the ecosystem.<br></br>
-                            {/* <button class="btn btn-secondary"><a href="" target="_newtab" onClick={handleAlert}>Learn more</a></button> */}
-                            <button class="btn btn-secondary"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_bands/Q_bands.md#quatre-buy-and-sell-q-bands" target="_newtab">Learn more</a></button>
+                            You also enjoy the benefits of being part of the ecosystem.
+                            {/* <br></br>*/}
+                            {/* <button class="btn btn-secondary"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_bands/Q_bands.md#quatre-buy-and-sell-q-bands" target="_newtab">Learn more</a></button> Add this and style it. Make it transparent to almost blend with the texts */}
                         </p>
                     </article>
                     <article>
@@ -25,8 +25,9 @@ const AppServices2 = ({ lightMode}) => {
                             Quatrefinance decentralized wallet not only serves you the benefits of owing
                             and controlling your assets but also come with a great deal of features you need
                             to fully experience the power of blockchain technology in securing and preserving
-                            what matters to you.<br></br>
-                            <strong>Coming soon ...</strong>
+                            what matters to you.
+                            {/* <br></br> */}
+                            {/* <strong>Coming soon ...</strong> */}
                         </p>
                     </article>
                 </section>

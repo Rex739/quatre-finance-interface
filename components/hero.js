@@ -5,8 +5,8 @@ const Hero = ({ lightMode, handleAlert}) => {
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}> 
             <div className={[styles.sectionContent, "wrapper"].join(" ")}>
                 <div>
-                    {/* <h1>Quatrefinance...</h1> */}
-                    <h2>Bringing you the full power of decentralization</h2>
+                    {/* <h2>Bringing you the full power of decentralization</h2> Use h2 tag for both headers */}
+                    <h1>Bringing you the full power of decentralization</h1>
                     <h2>Join the ecosystem of decentralized users and earn in different ways.</h2>
                     <div className={styles.inputWrapper}>
                         <button onClick={handleAlert} className={styles.tradeBtn}><a href="#">Launch App</a></button>

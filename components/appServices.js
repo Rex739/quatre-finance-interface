@@ -9,7 +9,7 @@ const AppServices1 = ({ lightMode }) => {
                 </figcaption>
                 <section>
                     <article>
-                        <h4><strong>Peer Lending & Borrowing</strong></h4>
+                        <h1>Peer Lending & Borrowing</h1>
                         <p>
                             Enjoy the super <strong>FOUR</strong> benefits of lending and borrowing asset,
                             via a peer to peer structure, staking and participating in Quatrefinance ecosystem.<br></br>
@@ -17,7 +17,7 @@ const AppServices1 = ({ lightMode }) => {
                         </p>
                     </article>
                     <article>
-                        <h4><strong>Single Lending & Borrowing</strong></h4>
+                        <h1>Single Lending & Borrowing</h1>
                         <p>
                             Do you want to be able to sell crypto to anyone and at the same time
                             desire utmost control over your funds and set parameters as your wish?

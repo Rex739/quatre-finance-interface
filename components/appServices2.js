@@ -9,7 +9,7 @@ const AppServices2 = ({ lightMode}) => {
                 </figcaption>
                 <section>
                     <article>
-                        <h4><strong>Buy & Sell</strong></h4>
+                        <h1>Buy & Sell</h1>
                         <p>
                         {/* <a href="#" target="_newtab" onClick={handleAlert}> */}
                             Buy and Sell directly without a third party involvement. Your assets stays
@@ -20,7 +20,7 @@ const AppServices2 = ({ lightMode}) => {
                         </p>
                     </article>
                     <article>
-                        <h4><strong>Q-Wallet</strong></h4>
+                        <h1>Q-Wallet</h1>
                         <p>
                             Quatrefinance decentralized wallet not only serves you the benefits of owing
                             and controlling your assets but also come with a great deal of features you need

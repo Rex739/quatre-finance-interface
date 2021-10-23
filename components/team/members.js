@@ -6,7 +6,7 @@ const Members = () => {
         return (
             <div className={["keen-slider__slide", `number-slides${member.id}`, styles.teamCard].join(" ")} key={member.id}>
                 <div className={styles.imgWrap}>
-                    <img src={member.img} alt="team member" className={styles.teamImg} />
+                    <img src={member.img} class="rounded float-start" alt="team member" className={styles.teamImg} />
                     
                 </div>
                 

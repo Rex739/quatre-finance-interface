@@ -1,6 +1,6 @@
 import styles from '../styles/local/components/services2.module.css'
 
-const AppServices2 = ({ lightMode }) => {
+const AppServices2 = ({ lightMode}) => {
     return (
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}>
             <div className={["wrapper", styles.sectionContent].join(" ")}>
@@ -9,23 +9,24 @@ const AppServices2 = ({ lightMode }) => {
                 </figcaption>
                 <section>
                     <article>
-                        <h1>Peer to Peer</h1>
+                        <h4><strong>Buy & Sell</strong></h4>
                         <p>
-                            When you take your money and invest it
-                            in the market, your primary goal is to grow
-                            your  bottom line. One way to do that is to
-                            consider diversifying your portfolio to include
-                            variou iches and types.
+                        {/* <a href="#" target="_newtab" onClick={handleAlert}> */}
+                            Buy and Sell directly without a third party involvement. Your assets stays
+                            with you and your worries about providing KYC and personal data are over. 
+                            You also enjoy the benefits of being part of the ecosystem.<br></br>
+                            {/* <button class="btn btn-secondary"><a href="" target="_newtab" onClick={handleAlert}>Learn more</a></button> */}
+                            <button class="btn btn-secondary"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_bands/Q_bands.md#quatre-buy-and-sell-q-bands" target="_newtab">Learn more</a></button>
                         </p>
                     </article>
                     <article>
-                        <h1>Q Wallet</h1>
+                        <h4><strong>Q-Wallet</strong></h4>
                         <p>
-                            When you take your money and invest it
-                            in the market, your primary goal is to grow
-                            your  bottom line. One way to do
-                            that is to consider diversifying your portfolio
-                            to include various investment niches and types.
+                            Quatrefinance decentralized wallet not only serves you the benefits of owing
+                            and controlling your assets but also come with a great deal of features you need
+                            to fully experience the power of blockchain technology in securing and preserving
+                            what matters to you.<br></br>
+                            <strong>Coming soon ...</strong>
                         </p>
                     </article>
                 </section>

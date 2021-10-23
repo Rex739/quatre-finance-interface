@@ -30,12 +30,11 @@ const Team = ({lightMode}, props) => {
     return ( 
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")} id="team">
             <div className={["navigation-wrapper wrapper ", styles.sectionContent].join(" ")}>
-                <h1>Our Team Members</h1>
-                {/* <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam est ex, imperdiet a scelerisque in, congue ut metus.
-                    Pellentesque eu eros ante. Mauris id viverra ligula.
-                </p> */}
+                <h1>Our Team</h1>
+                <p>
+                    As a remote team of individuals with a wide range of backgrounds and interests, we promote decentralized products
+                    in the blockchain space tailored to specific community needs and the world at large.
+                </p>
                 {slider && (
                     <>
                         <ArrowLeft

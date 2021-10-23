@@ -11,7 +11,7 @@ const AppServices2 = ({ lightMode}) => {
                     <article>
                         <h1>Buy & Sell</h1>
                         <p>
-                        {/* <a href="#" target="_newtab" onClick={handleAlert}> */}
+                            {/* <a href="#" target="_newtab" onClick={handleAlert}> */}
                             Buy and Sell directly without a third party involvement. Your assets stays
                             with you and your worries about providing KYC and personal data are over. 
                             You also enjoy the benefits of being part of the ecosystem.

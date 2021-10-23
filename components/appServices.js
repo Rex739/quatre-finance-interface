@@ -5,13 +5,14 @@ const AppServices1 = ({ lightMode }) => {
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}>
             <div className={["wrapper", styles.sectionContent].join(" ")}>
                 <figcaption>
-                    <img src="images/quatre.png" class="img-fluid" alt="quatre finance" />
+                    <img src="images/quatre.png" alt="quatre finance" />
                 </figcaption>
                 <section>
                     <article>
                         <h1>Peer Lending & Borrowing</h1>
                         <p>
-                            Enjoy the super <strong>FOUR</strong> benefits of lending and borrowing asset,
+                            {/* Please bold the FOUR in line 15 */}
+                            Enjoy the super FOUR benefits of lending and borrowing asset,
                             via a peer to peer structure, staking and participating in Quatrefinance ecosystem.
                             {/* <br></br> */}
                             {/* <button class="btn btn-secondary"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_core/Q_core.md#quatre-four-q-core" target="_newtab">Learn more</a></button> */}

@@ -42,14 +42,14 @@ export const team = [
         twitter: "https://twitter.com/oluguzzyman",
         linkedin: "https://www.linkedin.com/in/oluwagbemiga-olotu-a3247710/",
     },
-    {
-        id: 6,
-        name: "Adekunle Deji",
-        role: "Lead Marketer",
-        img: "images/team/deji.png",
-        twitter: "https://twitter.com/cool_dejii?t=tguW1YblNbdpQO_V9uVx2Q&s=08",
-        linkedin: "https://www.linkedin.com/in/deji-adekunle-pmp%C2%AE%C2%A0-mnse-118693118/",
-    },
+    // {
+    //     id: 6,
+    //     name: "Adekunle Deji",
+    //     role: "Lead Marketer",
+    //     img: "images/team/deji.png",
+    //     twitter: "https://twitter.com/cool_dejii?t=tguW1YblNbdpQO_V9uVx2Q&s=08",
+    //     linkedin: "https://www.linkedin.com/in/deji-adekunle-pmp%C2%AE%C2%A0-mnse-118693118/",
+    // },
     // {
     //     id: 7,
     //     name: "Adediji Steve Adedoyin",

@@ -55,7 +55,7 @@ const DesktopNav = ({ lightMode, toggleMode, handleAlert}) => {
                             </a>
                         </Link>
                     </li>
-                    {/* <i onClick={toggleMode} className={lightMode ? "bi bi-sun-fill sun-icon  my-auto px-2" : "bi bi-moon-fill moon-icon my-auto px-2"}></i> */}
+                    <i onClick={toggleMode} className={lightMode ? "bi bi-sun-fill sun-icon  my-auto px-2" : "bi bi-moon-fill moon-icon my-auto px-2"}></i>
                 </ul>
             </nav>
         </div>

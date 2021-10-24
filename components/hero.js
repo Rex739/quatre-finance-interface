@@ -13,7 +13,7 @@ const Hero = ({ lightMode, handleAlert}) => {
                         <button onClick={handleAlert} className={styles.tradeBtn}><a href="#">Launch App</a></button>
                         <div className="d-flex flex-row">
                             <form action="">
-                                <input className={styles.form} placeholder="Enter Email Address" type="email" required />
+                                <input className={styles.form} placeholder="Enter  Address" type="email" required />
                             </form>
                             <button className={styles.subscribeBtn} type="submit"><a href="">Subscribe</a></button>
                         </div>

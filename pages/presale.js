@@ -1,7 +1,15 @@
-const Presales = () => {
+import WhitePaper from '../components/whitepaper'
+import RoadMap from '../components/roadMap'
+
+const Presales = ({lightMode }) => {
     return ( 
         <main>
-           hello 
+            <RoadMap 
+                lightMode={lightMode}
+            />
+            <WhitePaper 
+                lightMode={lightMode}
+            />
         </main>
     );
 }

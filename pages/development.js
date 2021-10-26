@@ -1,11 +1,13 @@
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { useTimer } from 'react-timer-hook'
 import Link from 'next/link';
 import styles from '../styles/local/components/development/development.module.css'
 
 const Development = ({ lightMode }) => {
-    const time = new Date();
+    const time = useMemo(()=> {
+       return new Date()
+    }, []);
     time.setSeconds(time.getSeconds() + 0);
 
     const {
@@ -23,7 +25,7 @@ const Development = ({ lightMode }) => {
         setTimeout(() => {
             router.push("/")
         }, 5000);
-    }, [router, restart, time])
+    }, [router, restart])
 
     return (
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}>

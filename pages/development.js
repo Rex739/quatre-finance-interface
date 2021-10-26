@@ -23,7 +23,7 @@ const Development = ({ lightMode }) => {
         setTimeout(() => {
             router.push("/")
         }, 5000);
-    }, [router])
+    },[])
 
     return (
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}>

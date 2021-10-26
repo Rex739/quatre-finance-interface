@@ -112,7 +112,7 @@ const RoadMap = ({ lightMode }, props) => {
                             </ul>
                         </div>
                     </div>
-                    {/* <div className={["keen-slider__slide number-slide4", styles.slideWrapper].join(" ")}>
+                    <div className={["keen-slider__slide number-slide4", styles.slideWrapper].join(" ")}>
                         <h2>PHASE 2</h2>
                         <h1>NOVEMBER  2021</h1>
                         <div>
@@ -129,7 +129,7 @@ const RoadMap = ({ lightMode }, props) => {
                                 <li>Farming begins.</li>
                             </ul>
                         </div>
-                    </div> */}
+                    </div>
                     {/* <div className={["keen-slider__slide number-slide5", styles.slideWrapper].join(" ")}>
                         <h2>PHASE 1</h2>
                         <h1>OCTOBER  2021</h1>

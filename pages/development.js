@@ -30,7 +30,6 @@ const Development = ({ lightMode }) => {
             <div className={["wrapper", styles.devWrap,  "text-center"].join(" ")}>
                 <figure>
                     <img src={"images/development/development1.png"} alt="in development" />
-                    {/* <img src={"images/development/engine1.png"} alt="in development" /> */}
                     <figcaption>
                         {"development in progress".toUpperCase()}
                     </figcaption>
@@ -40,7 +39,7 @@ const Development = ({ lightMode }) => {
                     <div className="buttons d-flex justify-content-center">
                         <button className="app-btn"><Link href="/">Homepage</Link></button>
                     </div>
-                </figure>
+                </figure> 
             </div>
         </section>
     );

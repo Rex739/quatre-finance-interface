@@ -1,16 +1,12 @@
 import { useRouter } from "next/router";
-import { useCallback, useEffect } from "react";
+import { useEffect } from "react";
 import { useTimer } from 'react-timer-hook'
 import Link from 'next/link';
 import styles from '../styles/local/components/development/development.module.css'
 
 const Development = ({ lightMode }) => {
     const time = new Date();
-    const Time = useCallback(()=> {
-        return time.setSeconds(time.getSeconds() + 0);
-    },[time])
-    // const time = new Date();
-    // time.setSeconds(time.getSeconds() + 0);
+    time.setSeconds(time.getSeconds() + 0);
 
     const {
         seconds,
@@ -27,7 +23,6 @@ const Development = ({ lightMode }) => {
         setTimeout(() => {
             router.push("/")
         }, 5000);
-        
     }, [router])
 
     return (

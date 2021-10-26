@@ -10,13 +10,15 @@ import Whitepaper from '../components/whitepaper'
 // import components
 
 
-const Home = ({lightMode, handleAlert }) => {
+const Home = ({isClicked, lightMode, handleAlert }) => {
   return (
     <>
       <Head>
         <title>Quatre||Home</title>
       </Head>
-      <main>
+      <main className="position-relative">
+        <div className={isClicked ? "overlay" : "d-none"}>
+        </div>
         {/* render components here */}
         <Hero
           lightMode={lightMode}

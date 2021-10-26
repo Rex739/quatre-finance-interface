@@ -7,6 +7,7 @@
   .sectionContainer article:first-child{
       position: absolute;
       display: flex;
+      height: 10rem;
       flex-direction: row;
       top: -30px;
       right: 0;
@@ -21,7 +22,14 @@
   }
   .sectionContainer article div img {
       width: 60px;
+      margin:0 auto
   }
+  /* .sectionContainer article:first-child div p{
+    display: none;
+  }
+  .sectionContainer article:first-child div img:hover, .sectionContainer article:first-child div p{
+      display: block;
+  } */
   .sectionContainer article::-webkit-scrollbar {
     display: none;
   }

@@ -3,29 +3,35 @@ import ActiveLink from '../activeLink';
 
 const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert }) => {
     return ( 
-        <aside className={isClicked ? styles.mobileNavWrapper : styles.hideMobileNav}>
-            <nav className={lightMode ? styles.lightMode : styles.darkMode}>
+       
+        <aside className={lightMode ? styles.lightMode : styles.darkMode}>
+            <nav className={isClicked ? styles.mobileNavWrapper : styles.hideMobileNav}>
                 <ul className={isClicked ? "d-flex list-unstyled m-0" : "d-none list-unstyled m-0"}>
+                    <div className={isClicked ? "py-2 ms-auto me-4 mb-5" : "my-auto ms-auto me-4 mb-5"} onClick={handleClick}>
+                        <div className={isClicked ? [styles.hamburger, styles.hamburgerX].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
+                        <div className={isClicked ? [styles.hamburger, styles.hamburgerX2].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")}></div>
+                        <div className={isClicked ? [styles.hamburger, "d-none"].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
+                    </div>
                     <ActiveLink href="/" handleClick={handleClick}>
-                        <img src="images/home.svg" alt="home" width={32} height={20} className="me-2" /> Home
+                        <img src="images/home.svg" alt="home" width={40} height={40} className="me-2" /> Home
                     </ActiveLink>
-                    <ActiveLink href="#" handleClick={handleClick} handleAlert={handleAlert}>
-                        <img src="images/farm.svg" alt="farm" width={32} height={20} className="me-2" /> Farm
+                    <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
+                        <img src="images/farm.svg" alt="farm" width={40} height={40} className="me-2" /> Farm
                     </ActiveLink>
-                    <ActiveLink href="#" handleClick={handleClick} handleAlert={handleAlert}>
-                        <img src="images/app.svg" alt="app" width={32} height={20} className="me-2" /> App
+                    <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
+                        <img src="images/app.svg" alt="app" width={40} height={40} className="me-2" /> App
                     </ActiveLink>
                     <ActiveLink href="/#team " handleClick={handleClick}>
-                        <img src="images/team.svg" alt="team" width={32} height={20} className="me-2" /> Team
+                        <img src="images/team.svg" alt="team" width={40} height={40} className="me-2" /> Team
                     </ActiveLink>
                     <ActiveLink href="/contact" handleClick={handleClick}>
-                        <img src="images/contact.svg" alt="contact" width={32} height={20} className="me-2" /> Contact
+                        <img src="images/contact.svg" alt="contact" width={40} height={40} className="me-2" /> Contact
                     </ActiveLink>
                     <ActiveLink href="https://github.com/Quatre-Finance" handleClick={handleClick}>
-                        <img src="images/github.svg" alt="github" width={32} height={20} className="me-2" /> Github
+                        <img src="images/github.svg" alt="github" width={40} height={40} className="me-2" /> Github
                     </ActiveLink>
-                    <ActiveLink href="https://medium.com/@QuatreFinance" handleClick={handleClick}>
-                        <img src="images/docs.svg" alt="docs" width={32} height={20} className="me-2" /> Docs
+                    <ActiveLink href="https://github.com/Quatre-Finance/Q-paper#welcome-to-quatre-finance" handleClick={handleClick}>
+                        <img src="images/docs.svg" alt="docs" width={40} height={40} className="me-2" /> Docs
                     </ActiveLink>
                 </ul>
             </nav>

@@ -14,12 +14,12 @@ const ActiveLink = ({ handleClick, children, href }) => {
 
     const handleActiveClick = (e) => {
         e.preventDefault()
-        href === "#" ? alert("STILL IN DEVELOPMENT") : router.push(href)
+        router.push(href)
     }
 
     return (
         <li onClick={handleClick} style={listStyle}>
-            <a href={href} onClick={handleActiveClick} style={linkStyle}>
+            <a href={href} onClick={handleActiveClick} style={linkStyle} target="_newtab">
                 {children}
             </a>
         </li>

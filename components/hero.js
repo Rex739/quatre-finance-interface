@@ -1,19 +1,18 @@
 import styles from '../styles/local/components/hero.module.css'
-
+import Link from 'next/Link';
 const Hero = ({ lightMode, handleAlert}) => {
     return ( 
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}> 
             <div className={[styles.sectionContent, "wrapper"].join(" ")}>
                 <div>
                     <h1>Quatre...</h1>
-                    <h2>A DEFI that unifies them all</h2>
-                    <h4>Four apps...simple to interact with and a wonderful experience.</h4>
-                    <h3>Join our Four-peer lending and borrowing pool today.</h3>
+                    <h3>Bringing you the full power of decentralization</h3> 
+                    <h3>Join the ecosystem of decentralized app users and earn in multiple ways</h3>
                     <div className={styles.inputWrapper}>
-                        <button onClick={handleAlert} className={styles.tradeBtn}><a href="#">Launch App</a></button>
+                        <button className={styles.tradeBtn}><Link href="/development">Launch App</Link></button>
                         <div className="d-flex flex-row">
                             <form action="">
-                                <input className={styles.form} placeholder="Enter  Address" type="email" required />
+                                <input className={styles.form} placeholder="Enter Email Address" type="email" required />
                             </form>
                             <button className={styles.subscribeBtn} type="submit"><a href="">Subscribe</a></button>
                         </div>

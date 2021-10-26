@@ -15,14 +15,78 @@ html{
 	}
 	.cards{
 		transition: 0.5s ease;
+		margin: 0 0.2rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.cards p{
+		visibility: hidden;
+		opacity: 0;
+		font: 1rem/1.6rem var(--roboto);
+		font-weight: 500;
+		color: var(--black);
+		text-align: center;
+		
 	}
 	.cards:hover{
 		transform: scaleX(1.05);
 		transition: 0.5s ease;
 	}
-}
-@media all and (min-width: 400px){
+	.cards:hover p {
+		display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+	/* button */
+	.app-btn{
+		background: var(--orange);
+		transition: 0.2s ease-in-out;
+		outline: none;
+		display: flex;
+		flex-direction: row;
+		height: 40px;
+		max-width: 50%;
+		min-width: 50%;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		border-radius: 5px;
+	}
+
+	.app-btn a{
+		font: 0.813rem/0.938rem var(--roboto);
+		text-decoration: none;
+	}
 	
+	/* .devWrap figure img:nth-child(2){
+   		width: 80px;
+		position: absolute;
+		top: 24%;
+		left: 65%;
+		transform: translateY(30px);
+		z-index: 2;
+	} */
+	
+	/* @keyframes rotate {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	} */
+	
+}
+@media all and (min-width: 375px){
+  .app-btn{
+    height: 40px;
+    max-width: 90px;
+    min-width: 90px;
+  }
+}
+@media all and (min-width: 425px){
+  .app-btn{
+    background: var(--orange);
+    height: 40px;
+    max-width: 128px;
+    min-width: 128px;
+  }
 }
 @media all and (min-width: 768px){
 	
@@ -33,6 +97,20 @@ html{
 		width: 90%;
 		margin: 0 auto;
 	}
+	.app-btn{
+		height: 52px;
+		max-width: 158px;
+		min-width: 158px;
+  	}
+	.app-btn a{
+		font: 1rem/1.125rem var(--roboto);
+		text-decoration: none;
+	}
+	.app-btn:hover{
+		background: var(--plantation-green);
+		transition: 0.2s ease-in-out;
+	}
+
 }
 @media all and (min-width: 1440px){
 	
@@ -56,4 +134,12 @@ html{
 .bi-moon-fill{
 	color: var(--granny-apple);
 	font-size: 20px;
+}
+.overlay{
+	position: absolute;
+	background: var(--transparent-white);
+	transition: 1s ease-in-out;
+	height: 100%;
+	z-index: 3;
+	width: 100%;
 }

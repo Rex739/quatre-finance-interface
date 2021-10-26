@@ -3,22 +3,26 @@
     display: flex;
     flex-direction: column;
   }
-   .sectionContent figcaption img {
-       width: 100%;
-   }
-   .sectionContent section article h1 {
-        font: 1.188rem/1.375rem var(--roboto);
-        font-weight: 700;
-   }
-   .sectionContent section article p {
-        font: 1.125rem/1.8rem var(--roboto);
-        font-weight: 300;
-   }
+
+  .sectionContent section article{
+    padding: 1rem 0;
+  }
+  .sectionContent figcaption img {
+    width: 100%;
+  }
+  .sectionContent section article h1 {
+    font: 1.188rem/1.375rem var(--roboto);
+    font-weight: 700;
+  }
+  .sectionContent section article p {
+    font: 1.125rem/1.8rem var(--roboto);
+    font-weight: 300;
+  }
 }
 @media all and (min-width: 375px){
   .sectionContent figcaption img {
-       width: 350px;
-       margin: auto;
+    width: 350px;
+    margin: auto;
    }
 }
 @media all and (min-width: 500px){

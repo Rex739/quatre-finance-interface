@@ -14,15 +14,15 @@ const DesktopNav = ({ lightMode, toggleMode, handleAlert}) => {
                         </Link>
                     </li>
                     <li className="my-auto ms-auto">
-                        <Link href="#">
-                            <a onClick={handleAlert}>
+                        <Link href="/development">
+                            <a>
                                 <img src="images/farm.svg" alt="farm" width={32} height={20} className="mr-1" /> Farm
                             </a>
                         </Link>
                     </li>
                     <li className="my-auto">
-                        <Link href="#">
-                            <a onClick={handleAlert}>
+                        <Link href="/development">
+                            <a>
                                 <img src="images/app.svg" alt="app" width={32} height={20} className="mr-1" /> App
                             </a>
                         </Link>
@@ -55,7 +55,7 @@ const DesktopNav = ({ lightMode, toggleMode, handleAlert}) => {
                             </a>
                         </Link>
                     </li>
-                    <i onClick={toggleMode} className={lightMode ? "bi bi-sun-fill sun-icon  my-auto px-2" : "bi bi-moon-fill moon-icon my-auto px-2"}></i>
+                    {/* <i onClick={toggleMode} className={lightMode ? "bi bi-sun-fill sun-icon  my-auto px-2" : "bi bi-moon-fill moon-icon my-auto px-2"}></i> */}
                 </ul>
             </nav>
         </div>

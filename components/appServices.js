@@ -9,24 +9,21 @@ const AppServices1 = ({ lightMode }) => {
                 </figcaption>
                 <section>
                     <article>
-                        <h1>Lend & Borrow</h1>
+                        <h1>Peer Lending & Borrowing</h1>
                         <p>
-                            When you take your money and invest it
-                            in the market, your primary goal is to grow
-                            your  bottom line. One way to do that is to
-                            consider diversifying your portfolio to include
-                            variou iches and types.
+                            Enjoy the super <b>FOUR</b> benefits of lending and borrowing asset,
+                            via a peer to peer structure, staking and participating in Quatrefinance ecosystem.
                         </p>
+                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_core/Q_core.md#quatre-four-q-core" target="_newtab">Learn more</a></button>
                     </article>
                     <article>
-                        <h1>Buy & Sell</h1>
+                        <h1>Single Lending & Borrowing</h1>
                         <p>
-                            When you take your money and invest it
-                            in the market, your primary goal is to grow
-                            your  bottom line. One way to do
-                            that is to consider diversifying your portfolio
-                            to include various investment niches and types.
+                            Do you want to be able to sell crypto to anyone and at the same time
+                            desire utmost control over your funds and set parameters as your wish?
+                            If your answer is other than &quot;No&quot;, then this category best fits your need.
                         </p>
+                        <button class="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_lend/QLend.md#quatre-landb-q-landb" target="_newtab">Learn more</a></button>
                     </article>
                 </section>
             </div>

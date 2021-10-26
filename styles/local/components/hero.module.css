@@ -1,6 +1,6 @@
 @media all and (min-width: 0px){
   .sectionContainer {
-    padding: 5rem 0 2rem 0;
+    padding: 7rem 0 2rem 0;
     width: 100%;
     overflow: hidden;
   }
@@ -87,7 +87,7 @@
   .inputWrapper div input[type=email]:focus{
     font: 0.813rem/0.938rem var(--roboto);
     color: var(--white);
-    padding-left: 1.5rem;
+    padding-left: 0.02rem;
   }
   .heroImg{
     display: block;
@@ -120,6 +120,12 @@
   }
   .inputWrapper div{
     margin: 0 0 0 20px;
+  }
+  .form::placeholder{
+    padding-left: 1.5rem;
+    width: 400px;
+    font: 0.7rem/0.938rem var(--roboto);
+    color: var(--white)
   }
 }
 @media all and (min-width: 425px){

@@ -4,7 +4,7 @@ import styles from '../../styles/local/components/team.module.css'
 const Members = () => {
     const _members = team.map(member => {
         return (
-            <div className={["keen-slider__slide", `number-slides${member.id}`, styles.teamCard].join(" ")} key={member.id}>
+            <div className={styles.teamCard} key={member.id}>
                 <div className={styles.imgWrap}>
                     <img src={member.img} alt="team member" className={styles.teamImg} />
                     
@@ -27,9 +27,9 @@ const Members = () => {
         )
     })
     return(
-        <>
+        <div className={styles.teamWrap}>
             {_members}
-        </>
+        </div>
     )
 }
     

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../../styles/local/components/navbar.module.css'
 
-const DesktopNav = ({ lightMode, toggleMode, handleAlert}) => {
+const DesktopNav = ({ lightMode, toggleMode }) => {
     return ( 
         <div className={ lightMode ?  [styles.lightMode, styles.desktopNav].join(" ")  : [styles.darkMode, styles.desktopNav].join(" ")}>
             <nav className={[styles.topNav, 'wrapper'].join(" ")}>

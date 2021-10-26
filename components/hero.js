@@ -1,6 +1,7 @@
 import styles from '../styles/local/components/hero.module.css'
-import Link from 'next/Link';
-const Hero = ({ lightMode, handleAlert}) => {
+import Link from 'next/link';
+
+const Hero = ({ lightMode }) => {
     return ( 
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}> 
             <div className={[styles.sectionContent, "wrapper"].join(" ")}>

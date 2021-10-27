@@ -24,7 +24,7 @@ const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert }) => {
                     <ActiveLink href="/#team " handleClick={handleClick}>
                         <img src="images/team.svg" alt="team" width={40} height={40} className="me-2" /> Team
                     </ActiveLink>
-                    <ActiveLink href="/contact" handleClick={handleClick}>
+                    <ActiveLink href="/#footer" handleClick={handleClick}>
                         <img src="images/contact.svg" alt="contact" width={40} height={40} className="me-2" /> Contact
                     </ActiveLink>
                     <ActiveLink href="https://github.com/Quatre-Finance" handleClick={handleClick}>

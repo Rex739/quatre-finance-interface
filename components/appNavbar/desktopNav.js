@@ -35,7 +35,7 @@ const DesktopNav = ({ lightMode, toggleMode }) => {
                         </Link>
                     </li>
                     <li className="my-auto">
-                        <Link href="/">
+                        <Link href="/#footer">
                             <a>
                                 <img src="images/contact.svg" alt="contact" width={32} height={20} className="mr-1" /> Contact
                             </a>

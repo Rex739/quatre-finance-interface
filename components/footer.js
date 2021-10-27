@@ -2,7 +2,7 @@ import styles from '../styles/local/components/footer.module.css'
 
 const Footer = ({lightMode}) => {
     return ( 
-        <footer className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}>
+        <footer className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")} id="footer">
             <div className={["d-flex wrapper justify-content-between align-items-center", styles.sectionContent].join(" ")}>
                 <figure className={styles.socials}>
                     <a href="https://github.com/Quatre-Finance" target="_newtab"><img src="images/github-foot.svg" alt="github" /></a>

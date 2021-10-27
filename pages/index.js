@@ -15,6 +15,12 @@ const Home = ({isClicked, lightMode, handleAlert }) => {
     <>
       <Head>
         <title>Quatre||Home</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Quatre... Bringing you the full power of decentralization Join the ecosystem of decentralized app users and earn in multiple ways"/>
+        <meta name="keyword" content="Next App"/>
+        <meta name="Author" content="Quatre Team"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
       </Head>
       <main className="position-relative">
         <div className={isClicked ? "overlay" : "d-none"}>

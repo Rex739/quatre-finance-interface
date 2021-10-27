@@ -20,7 +20,7 @@ const Home = ({isClicked, lightMode, handleAlert }) => {
         <meta name="keyword" content="Next App"/>
         <meta name="author" content="Quatre Team"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
       </Head>
       <main className="position-relative">
         <div className={isClicked ? "overlay" : "d-none"}>

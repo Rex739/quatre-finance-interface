@@ -57,115 +57,164 @@ const RoadMap = ({ lightMode }, props) => {
             <div className={["navigation-wrapper wrapper ", styles.sectionContent].join(" ")}>
                 <h2>History Timeline</h2>
                 <h1>Development Roadmap</h1>
+                <table>
+                    <tr>
+                        <th>Legends</th>
+                    </tr>
+                    <tr>
+                        <td><img src="images/double-check.svg" alt={styles.completed}/></td>
+                        <td>Completed</td> 
+                    </tr>
+                    <tr>
+                        <td><img src="images/check.svg" alt="ongoing" /></td>
+                        <td>Ongoing</td>
+                    </tr>
+                </table>
+                <strong>Swipe</strong>
                 <div ref={sliderRef} className={["keen-slider", styles.slidesContainer].join(" ")}>
                     <div className={["keen-slider__slide number-slide1", styles.slideWrapper].join(" ")}>
-                        <h2>PHASE 1</h2>
-                        <h1>OCTOBER  2021</h1>
+                        <h2>Q1</h2>
+                        <h1>2021</h1>
                         <div>
                             <div className={styles.listVector}>
                                 <div></div>
                                 <div className={styles.line}></div>
                             </div>
                             <ul>
-                                <li>Migration, testing and security audit of Quatre core</li>
-                                <li>Website goes live.</li>
-                                <li>First phase of Airdrop to be launched.</li>
-                                <li>Private sale begins.</li>
-                                <li>Early adopters sales.</li>
-                                <li>Public sale. </li>
+                                <li className={styles.completed}>Idea stage</li>
+                                <li className={styles.completed}>Problem statement draft</li>
                             </ul>
                         </div>
                     </div>
                     <div className={["keen-slider__slide number-slide2", styles.slideWrapper].join(" ")}>
-                        <h2>PHASE 2</h2>
-                        <h1>NOVEMBER  2021</h1>
+                        <h2>Q2</h2>
+                        <h1>2021</h1>
                         <div>
                             <div className={styles.listVector}>
                                 <div></div>
                                 <div className={styles.line}></div>
                             </div>
                             <ul>
-                                <li>Presale and airdrop end.</li>
-                                <li>Operational and strategic marketing begin.</li>
-                                <li>Product 2 goes live.</li>
-                                <li>Pancakeswap listing and relevant exchange listing. </li>
-                                <li>Market serialization and integration of QFOUR Token</li>
-                                <li>Farming begins.</li>
+                                <li className={styles.completed}>Solution documentation and planning</li>
+                                <li className={styles.completed}>Itemize Solution gathered from research and create some paperwork</li>
+                                <li className={styles.completed}>Project plannin</li>
+                                <li className={styles.completed}>Website: wireframing and UI/UX design to begin</li>
+                                <li>Sales research</li>
                             </ul>
                         </div>
                     </div>
                     <div className={["keen-slider__slide number-slide3", styles.slideWrapper].join(" ")}>
-                        <h2>PHASE 1</h2>
-                        <h1>OCTOBER  2021</h1>
+                        <h2>Q3</h2>
+                        <h1>2021</h1>
                         <div>
                             <div className={styles.listVector}>
                                 <div></div>
                                 <div className={styles.line}></div>
                             </div>
                             <ul>
-                                <li>Migration, testing and security audit of Quatre core</li>
-                                <li>Website goes live.</li>
-                                <li>First phase of Airdrop to be launched.</li>
-                                <li>Private sale begins.</li>
-                                <li>Early adopters sales.</li>
-                                <li>Public sale. </li>
+                                <li className={styles.completed}>Team formation</li>
+                                <li className={styles.completed}>Product design and strategy for code actualization</li>
+                                <li className={styles.completed}>Idea pitching</li>
+                                <li className={styles.completed}>Complete Token Smart contract code </li>
+                                <li className={styles.completed}>Complete Farm Smart Contract code </li>
+                                <li>Complete Presale Contract code</li>
+                                <li>Website development begins</li>
+                                <li>Community development </li>
+                                <li>Sales roadmaps and plans</li>
                             </ul>
                         </div>
                     </div>
                     <div className={["keen-slider__slide number-slide4", styles.slideWrapper].join(" ")}>
-                        <h2>PHASE 2</h2>
-                        <h1>NOVEMBER  2021</h1>
+                        <h2>Q4</h2>
+                        <h1>2021</h1>
                         <div>
                             <div className={styles.listVector}>
                                 <div></div>
                                 <div className={styles.line}></div>
                             </div>
                             <ul>
-                                <li>Presale and airdrop end.</li>
-                                <li>Operational and strategic marketing begin.</li>
-                                <li>Product 2 goes live.</li>
-                                <li>Pancakeswap listing and relevant exchange listing. </li>
-                                <li>Market serialization and integration of QFOUR Token</li>
-                                <li>Farming begins.</li>
+                                <li>Complete Landing page</li>
+                                <li>Migration, Beta-testing and security audit by mentors</li>
+                                <li>Public testing</li>
+                                <li>Core product's code completion</li>
+                                <li>Mainnet launch of Token, Farm, Presale </li>
+                                <li>Website goes live </li>
+                                <li>Operational and strategic marketing begins </li>
+                                <li>Phase 1 of sales to begin (Private)</li>
+                                <li>Product 1 (Core) goes live</li>
+                                <li>Launch airdrop</li>
+                                <li>Seed sales (phase 2)</li>
+                                <li>Q-VIP NFT development</li>
+                                <li>Progress evaluation</li>
                             </ul>
                         </div>
                     </div>
-                    {/* <div className={["keen-slider__slide number-slide5", styles.slideWrapper].join(" ")}>
-                        <h2>PHASE 1</h2>
-                        <h1>OCTOBER  2021</h1>
+                    <div className={["keen-slider__slide number-slide5", styles.slideWrapper].join(" ")}>
+                        <h2>Q1</h2>
+                        <h1>2022</h1>
                         <div>
                             <div className={styles.listVector}>
                                 <div></div>
                                 <div className={styles.line}></div>
                             </div>
                             <ul>
-                                <li>Migration, testing and security audit of Quatre core</li>
-                                <li>Website goes live.</li>
-                                <li>First phase of Airdrop to be launched.</li>
-                                <li>Private sale begins.</li>
-                                <li>Early adopters sales.</li>
-                                <li>Public sale. </li>
+                                <li>Early adopters sale</li>
+                                <li>Public sales</li>
+                                <li>Product 2 goes live.</li>
+                                <li>Intensive marketing and securing partnerships</li>
+                                <li>Market serialization and wallet integration of QFT such as Trust wallet, Coingecko, CMC listing etc</li>
+                                <li>Exchange listing.</li>
+                                <li>Farming goes live</li>
+                                <li>Product 2 goes live</li>
+                                <li>Product 3 developmet</li>
+                                <li>Progress evalution</li>
                             </ul>
                         </div>
                     </div>
                     <div className={["keen-slider__slide number-slide6", styles.slideWrapper].join(" ")}>
-                        <h2>PHASE 2</h2>
-                        <h1>NOVEMBER  2021</h1>
+                        <h2>Q2</h2>
+                        <h1>2022</h1>
                         <div>
                             <div className={styles.listVector}>
                                 <div></div>
                                 <div className={styles.line}></div>
                             </div>
                             <ul>
-                                <li>Presale and airdrop end.</li>
-                                <li>Operational and strategic marketing begin.</li>
-                                <li>Product 2 goes live.</li>
-                                <li>Pancakeswap listing and relevant exchange listing. </li>
-                                <li>Market serialization and integration of QFOUR Token</li>
-                                <li>Farming begins.</li>
+                                <li>Fostering more partnerships</li>
+                                <li>More CEX listing and partnership</li>
+                                <li>BuyBack</li>
+                                <li>Product 3 completion and release.</li>
+                                <li>Q-Wallet development</li>
                             </ul>
                         </div>
-                    </div> */}
+                    </div>
+                    <div className={["keen-slider__slide number-slide7", styles.slideWrapper].join(" ")}>
+                        <h2>Q3</h2>
+                        <h1>2022</h1>
+                        <div>
+                            <div className={styles.listVector}>
+                                <div></div>
+                                <div className={styles.line}></div>
+                            </div>
+                            <ul>
+                                <li>Q-Wallet completion and release.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={["keen-slider__slide number-slide8", styles.slideWrapper].join(" ")}>
+                        <h2>Q4</h2>
+                        <h1>2022</h1>
+                        <div>
+                            <div className={styles.listVector}>
+                                <div></div>
+                                <div className={styles.line}></div>
+                            </div>
+                            <ul>
+                                <li>Continuous integration and partnership</li>
+                                <li>Continuous product development</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div> 
                 {slider && (
                     <div className="d-flex justify-content-end">

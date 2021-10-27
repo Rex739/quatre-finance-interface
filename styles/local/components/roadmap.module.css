@@ -14,7 +14,7 @@
         text-align: center;
     }
     .slidesContainer{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
     .slideWrapper{
@@ -45,7 +45,7 @@
     }
     .line{
         background: var(--grey-green);
-        height: 265px;
+        height: 400px;
         width: 3px;
         margin: 1.17rem auto;
     }
@@ -58,6 +58,9 @@
         padding: 0rem 0 0 1.3rem ;
         margin: 0.5rem auto;
         font: 0.75rem/1.2rem var(--roboto);  
+    }
+    .completed{
+        background: url("/images/double-check.svg") no-repeat 0 0!important;
     }
 }
 @media all and (min-width: 768px){
@@ -93,6 +96,9 @@
         font: 1.125rem/2rem var(--roboto);
         margin: 0.5rem auto;  
     }
+    .line{
+        height: 500px;
+    }
 }
 @media all and (min-width: 1440px){
     .sectionContainer{
@@ -101,6 +107,9 @@
      .slideWrapper div ul li{
         font: 1.25rem/2rem var(--roboto);
         margin: 0.5rem auto;  
+    }
+    .line{
+        height: 600px;
     }
 
 }

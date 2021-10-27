@@ -83,6 +83,7 @@ const RoadMap = ({ lightMode }, props) => {
                             <ul>
                                 <li className={styles.completed}>Idea stage</li>
                                 <li className={styles.completed}>Problem statement draft</li>
+                                <li className={styles.completed}>Team formation</li>
                             </ul>
                         </div>
                     </div>
@@ -112,7 +113,6 @@ const RoadMap = ({ lightMode }, props) => {
                                 <div className={styles.line}></div>
                             </div>
                             <ul>
-                                <li className={styles.completed}>Team formation</li>
                                 <li className={styles.completed}>Product design and strategy for code actualization</li>
                                 <li className={styles.completed}>Idea pitching</li>
                                 <li className={styles.completed}>Complete Token Smart contract code </li>

@@ -18,7 +18,7 @@ const Home = ({isClicked, lightMode, handleAlert }) => {
         <meta charset="utf-8"/>
         <meta name="description" content="Quatre... Bringing you the full power of decentralization Join the ecosystem of decentralized app users and earn in multiple ways"/>
         <meta name="keyword" content="Next App"/>
-        <meta name="Author" content="Quatre Team"/>
+        <meta name="author" content="Quatre Team"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
       </Head>

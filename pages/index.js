@@ -14,7 +14,7 @@ const Home = ({isClicked, lightMode, handleAlert }) => {
   return (
     <>
       <Head>
-        <title>Quatre||Home</title>
+        <title>Quatre Finance</title>
         <meta charset="utf-8"/>
         <meta name="description" content="Quatre... Bringing you the full power of decentralization Join the ecosystem of decentralized app users and earn in multiple ways"/>
         <meta name="keyword" content="Next App"/>

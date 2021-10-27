@@ -136,7 +136,7 @@ const RoadMap = ({ lightMode }, props) => {
                                 <li>Complete Landing page</li>
                                 <li>Migration, Beta-testing and security audit by mentors</li>
                                 <li>Public testing</li>
-                                <li>Core product's code completion</li>
+                                <li>Core product&apos;s code completion</li>
                                 <li>Mainnet launch of Token, Farm, Presale </li>
                                 <li>Website goes live </li>
                                 <li>Operational and strategic marketing begins </li>

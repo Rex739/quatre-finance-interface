@@ -144,7 +144,7 @@
   .sectionContent{
     display: flex;
     flex-direction: row;
-    padding: 0rem 0 5rem 0;
+    padding: 5rem 0 5rem 0;
   }
   .heroImg{
     display: none;

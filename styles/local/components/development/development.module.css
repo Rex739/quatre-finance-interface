@@ -72,8 +72,7 @@
   z-index: 0;
 }
 .darkMode a {
-  color: var(--white
-  )
+  color: var(--white);
 }
 .lightMode{ 
   background: var(--deep-fir-green);
@@ -82,6 +81,5 @@
   z-index: 0;
 }
 .lightMode a {
-  color: var(--white
-  )
+  color: var(--white);
 }

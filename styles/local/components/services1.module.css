@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
   }
-
   .sectionContent section article{
     padding: 1rem 0;
   }
@@ -77,7 +76,7 @@
   z-index: 0;
 }
 .darkMode a {
-  color: var(--white)
+  color: var(--white);
 }
 .lightMode{ 
   background: var(--white);
@@ -86,5 +85,5 @@
   z-index: 0;
 }
 .lightMode a {
-  color: var(--white)
+  color: var(--white);
 }

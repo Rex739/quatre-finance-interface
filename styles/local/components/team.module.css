@@ -72,7 +72,7 @@
     font-size: 30px;
     border-radius: 50%;
     padding: 0.5rem;
-    border: 2px solid transparent
+    border: 2px solid transparent;
   }
   .sectionContent h1{
     font: 1.75rem/2rem var(--roboto);
@@ -167,7 +167,7 @@
   z-index: 0;
 }
 .darkMode a {
-  color: var(--white)
+  color: var(--white);
 }
 .lightMode{ 
   background: var(--grey-green);
@@ -185,5 +185,5 @@
   color: var(--black);
 }
 .lightMode a {
-  color: var(--white)
+  color: var(--white);
 }

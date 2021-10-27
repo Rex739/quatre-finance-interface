@@ -89,7 +89,7 @@
     }
   }
   .togglenavbar{
-    margin: auto 0
+    margin: auto 0;
   }
   .hideMobileNav{
     right: -1024px;
@@ -98,12 +98,7 @@
     display: none;
   }
 }
-@media all and (min-width: 400px){
-  /* .mobileNavWrapper > ul{
-    padding: 3rem 0 8rem;
-  } */
-  
-}
+
 @media all and (min-width: 768px){
   .nav2>ul>li{
     font-size: 1.5rem;

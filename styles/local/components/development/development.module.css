@@ -53,10 +53,10 @@
     }
 }
 @media all and (min-width: 1440px){
-    .devWrap figure img:nth-child(2){
-        animation: 3s rotate linear infinite;
+    /* .devWrap figure img:nth-child(2){
+        animation:  rotate 3s  linear infinite;
         left: 55%; 
-    }
+    } */
     .devWrap figure figcaption{
         font: 3rem/3.5rem var(--roboto);
         font-weight: 500;

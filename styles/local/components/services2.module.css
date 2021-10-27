@@ -66,7 +66,6 @@
    .sectionContent section article {
         width: 70%;
     }
-
 }
 /* Light and dark mode */
 .darkMode{
@@ -76,7 +75,7 @@
   z-index: 0;
 }
 .darkMode a {
-  color: var(--white)
+  color: var(--white);
 }
 .lightMode{ 
   background: var(--grey-green);
@@ -85,5 +84,5 @@
   z-index: 0;
 }
 .lightMode a {
-  color: var(--white)
+  color: var(--white);
 }

@@ -1,0 +1,146 @@
+@media all and (min-width: 0px){
+    .sectionContainer{
+        padding: 7em 0;
+        background-color: var(--lighter-black);
+    }
+
+    .sectionContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Airdrop Column */
+    .airdrop{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .airdrop h2{
+        font: 1.75rem/2.051rem var(--roboto);
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+
+    .airdrop .claim{
+        display: flex;
+        width: 100%;
+        max-width: 387px;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 auto; */
+    }
+
+    .airdrop .box{
+        background-color: var(--transparent-white);
+        display: none;
+    }
+
+    .claim input{
+        display: inline-block;
+        width: 90%;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        padding: 0.25rem;
+    }
+
+    .claim button{
+        outline: none;
+        border: none;
+        padding: 0;
+        height: 34px;
+        width: 60px;
+        background-color: var(--orange);
+        color: var(--white);
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+
+    }
+
+    /* Presale Column */
+    .presale{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .presale h2{
+        font: 1.75rem/2.051rem var(--roboto);
+        font-weight: 500;
+        color: var(--white);
+        margin: 2rem 0;
+    }
+
+    p.useWallet {
+        font: 1.125rem/1.625rem var(--roboto);
+        font-weight: 400;
+        color: var(--white);
+        margin-bottom: 2.5rem;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    p.address{
+        font: 1.125rem/1.318rem var(--roboto);
+        font-weight: 400;
+        color: var(--white);
+        margin-bottom: 0.3rem;
+    }
+
+    .presale input{
+        width: 90%;
+        max-width: 324px;
+        border-radius: 7px;
+        padding: 0.3rem;
+        font: 1.125rem/1.313rem var(--roboto);
+        opacity: 0.81;
+    }
+
+    .presale .toCopy{
+        font: 1.125rem/1.313rem var(--roboto);
+        color: var(--white);
+        opacity: 0.59;
+        margin-top: 0.3rem;
+    }
+
+    .presale .joinTelegram{
+        text-align: center;
+    }
+
+    .joinTelegram button{
+        background-color: transparent;
+        color: var(--white);
+        padding: 1rem;
+        border: 1px solid var(--white);
+        border-radius: 7px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media all and (min-width: 769px){
+    .sectionContent{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .airdrop{
+        margin-right: 1.5rem;
+    }
+
+    .airdrop .box{
+        margin-top: 1rem;
+        display: block;
+        width: 387px;
+        max-width: 387px;
+        height: 329px;
+        
+    }
+
+    .presale{
+        margin-left: 1.5rem;
+    }
+}

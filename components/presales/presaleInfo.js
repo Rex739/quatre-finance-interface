@@ -1,4 +1,4 @@
-import styles from '../styles/local/components/presaleInfo.module.css';
+import styles from '../../styles/local/components/presales/presaleInfo.module.css';
 
 const PresaleInfo = ({ lightMode }) => {
     
@@ -23,7 +23,7 @@ const PresaleInfo = ({ lightMode }) => {
                     <p className={styles.address}>
                         Presale Address:
                     </p>
-                    <input type="text" value="0x752915cf84Cf498C260F8A87AE26c"/>
+                    <input type="text" defaultValue="0x752915cf84Cf498C260F8A87AE26c"/>
                     <p className={styles.toCopy}>
                         (Click to copy)
                     </p>

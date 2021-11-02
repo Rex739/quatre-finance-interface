@@ -1,6 +1,6 @@
 import WhitePaper from '../components/whitepaper'
 import RoadMap from '../components/roadMap'
-import PresaleInfo from '../components/presaleInfo'
+import PresaleInfo from '../components/presales/presaleInfo'
 
 const Presales = ({lightMode }) => {
     return ( 

@@ -4,7 +4,7 @@ import AppServices2 from '../components/appServices2'
 import Cards from '../components/cards'
 import Hero from '../components/hero'
 import RoadMap from '../components/roadMap'
-import Team from '../components/team/team'
+// import Team from '../components/team/team'
 import Whitepaper from '../components/whitepaper'
 
 // import components
@@ -46,9 +46,9 @@ const Home = ({isClicked, lightMode, handleAlert }) => {
           lightMode={lightMode}
           handleAlert={handleAlert}
         />
-        <Team 
+        {/* <Team 
           lightMode={lightMode}
-        />
+        /> */}
       </main>
     </>
   )

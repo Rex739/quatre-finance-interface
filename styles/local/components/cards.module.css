@@ -97,9 +97,10 @@
 }
 /* Light and dark mode */
 .darkMode{
-  background: transparent;
-  background-image: url("/images/bg-pattern1.svg");
-  color: var(--black);
+  background: var(--dark-mode2);
+  background-image: url("/images/bg-pattern.svg");
+  color: var(--white);
+   transition: 0.2s ease-in-out;
   z-index: 0;
 }
 .darkMode a {
@@ -109,6 +110,7 @@
   background: transparent;
   background-image: url("/images/bg-pattern1.svg");
   color: var(--white);
+   transition: 0.2s ease-in-out;
   z-index: 0;
 }
 .lightMode a {

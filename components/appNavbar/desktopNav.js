@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import styles from '../../styles/local/components/navbar.module.css'
 
-const DesktopNav = ({ lightMode, toggleMode }) => {
+const DesktopNav = ({ lightMode, toggleMode, sound }) => {
+    const switchMode = () => {
+        toggleMode();
+        sound.play();
+    }
     return ( 
         <div className={ lightMode ?  [styles.lightMode, styles.desktopNav].join(" ")  : [styles.darkMode, styles.desktopNav].join(" ")}>
             <nav className={[styles.topNav, 'wrapper'].join(" ")}>
@@ -27,13 +31,13 @@ const DesktopNav = ({ lightMode, toggleMode }) => {
                             </a>
                         </Link>
                     </li>
-                    <li className="my-auto">
+                    {/* <li className="my-auto">
                         <Link href="/#team">
                             <a>
                                 <img src="images/team.svg" alt="team" width={32} height={20} className="mr-1" /> Team
                             </a>
                         </Link>
-                    </li>
+                    </li> */}
                     <li className="my-auto">
                         <Link href="/#footer">
                             <a>
@@ -55,7 +59,7 @@ const DesktopNav = ({ lightMode, toggleMode }) => {
                             </a>
                         </Link>
                     </li>
-                    {/* <i onClick={toggleMode} className={lightMode ? "bi bi-sun-fill sun-icon  my-auto px-2" : "bi bi-moon-fill moon-icon my-auto px-2"}></i> */}
+                    <i onClick={switchMode} className={lightMode ? "bi bi-sun-fill sun-icon  my-auto px-2" : "bi bi-moon-fill moon-icon my-auto px-2"}></i>
                 </ul>
             </nav>
         </div>

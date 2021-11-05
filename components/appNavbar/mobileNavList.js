@@ -1,17 +1,28 @@
 import styles from '../../styles/local/components/navbar.module.css'
 import ActiveLink from '../activeLink';
 
-const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert }) => {
+const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert, sound, toggleMode }) => {
+    const switchMode = () => {
+        toggleMode();
+        sound.play();
+    }
     return ( 
        
         <aside className={lightMode ? styles.lightMode : styles.darkMode}>
             <nav className={isClicked ? styles.mobileNavWrapper : styles.hideMobileNav}>
+                
                 <ul className={isClicked ? "d-flex list-unstyled m-0" : "d-none list-unstyled m-0"}>
-                    <div className={isClicked ? "py-2 ms-auto me-4 mb-5" : "my-auto ms-auto me-4 mb-5"} onClick={handleClick}>
-                        <div className={isClicked ? [styles.hamburger, styles.hamburgerX].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
-                        <div className={isClicked ? [styles.hamburger, styles.hamburgerX2].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")}></div>
-                        <div className={isClicked ? [styles.hamburger, "d-none"].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
-                    </div>
+                    <ol className="d-flex">
+                        <div>
+                            <i onClick={switchMode} className={lightMode ? "bi bi-sun-fill sun-icon ms-auto my-auto px-2" : "bi bi-moon-fill moon-icon ms-auto my-auto px-2"}></i>
+                        </div>
+                        <div className={isClicked ? "py-2 ms-auto me-4 mb-5" : "my-auto ms-auto me-4 mb-5"} onClick={handleClick}>
+                            <div className={isClicked ? [styles.hamburger, styles.hamburgerX].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
+                            <div className={isClicked ? [styles.hamburger, styles.hamburgerX2].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")}></div>
+                            <div className={isClicked ? [styles.hamburger, "d-none"].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
+                        </div>
+                    </ol>
+                    
                     <ActiveLink href="/" handleClick={handleClick}>
                         <img src="images/home.svg" alt="home" width={40} height={40} className="me-2" /> Home
                     </ActiveLink>
@@ -21,9 +32,9 @@ const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert }) => {
                     <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
                         <img src="images/app.svg" alt="app" width={40} height={40} className="me-2" /> App
                     </ActiveLink>
-                    <ActiveLink href="/#team " handleClick={handleClick}>
+                    {/* <ActiveLink href="/#team " handleClick={handleClick}>
                         <img src="images/team.svg" alt="team" width={40} height={40} className="me-2" /> Team
-                    </ActiveLink>
+                    </ActiveLink> */}
                     <ActiveLink href="/#footer" handleClick={handleClick}>
                         <img src="images/contact.svg" alt="contact" width={40} height={40} className="me-2" /> Contact
                     </ActiveLink>

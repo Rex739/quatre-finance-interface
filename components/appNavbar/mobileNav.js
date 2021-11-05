@@ -1,7 +1,7 @@
 import TopBar from "./mobileTopbar";
 import MobileNavList from './mobileNavList';
 
-const MobileNav = ({handleClick, isClicked, toggleMode, lightMode, handleAlert}) => {
+const MobileNav = ({handleClick, isClicked, toggleMode, lightMode, handleAlert, sound}) => {
     return (
         <>
             <TopBar 
@@ -17,6 +17,7 @@ const MobileNav = ({handleClick, isClicked, toggleMode, lightMode, handleAlert})
                 toggleMode={toggleMode}
                 lightMode={lightMode}
                 handleAlert={handleAlert}
+                sound={sound}
             />
         </>   
     );

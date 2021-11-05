@@ -1,6 +1,9 @@
 import { useRef } from 'react';
 import MobileNav from './mobileNav';
 import DesktopNav from './desktopNav';
+// audio
+import { Howl, Howler } from 'howler';
+
 
 const Navbar = ({ handleClick, isClicked, toggleMode, lightMode, handleAlert }, props) => {
     const safeDocument = typeof document !== 'undefined' ? document : {};
@@ -38,6 +41,11 @@ const Navbar = ({ handleClick, isClicked, toggleMode, lightMode, handleAlert }, 
 
     isClicked ? blockScroll() : allowScroll();
 
+
+    const sound = new Howl({
+        src: ["audio/dark-mode.mp3", "audio/light-mode.mp3"]
+    });
+
     return (
         <header>
             <MobileNav 
@@ -46,12 +54,14 @@ const Navbar = ({ handleClick, isClicked, toggleMode, lightMode, handleAlert }, 
                 toggleMode = { toggleMode } 
                 lightMode={lightMode}
                 handleAlert={handleAlert}
+                sound = {sound}
                 
             />
             <DesktopNav 
                 toggleMode={toggleMode}
                 lightMode={lightMode}
                 handleAlert={handleAlert}
+                sound={sound}
             />
         </header>
     );

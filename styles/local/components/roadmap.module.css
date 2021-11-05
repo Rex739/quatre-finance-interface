@@ -4,7 +4,6 @@
     }
     .sectionContent h2{
         font: 1.125rem/1rem var(--roboto);
-        color: var(--dark-grey);
         font-weight: bold;
         text-align: center;
     }
@@ -66,7 +65,6 @@
 @media all and (min-width: 768px){
     .sectionContent h2{
         font: 1.5rem/1.8rem var(--roboto);
-        color: var(--dark-grey);
         font-weight: bold;
     }
     .sectionContent h1{
@@ -83,7 +81,6 @@
     }
     .sectionContent h2{
         font: 1.5rem/2.4rem var(--roboto);
-        color: var(--dark-grey);
         font-weight: bold;
         text-align: center;
     }
@@ -116,20 +113,30 @@
 
 /* Light and dark mode */
 .darkMode{
-  background: var(--deep-fir-green);
-  background-image: url("/images/bg-pattern1.svg");
-  color: var(--black);
-  z-index: 0;
+    background: var(--dark-mode2);
+    background-image: url("/images/bg-pattern.svg");
+    color: var(--white);
+    transition: 0.2s ease-in-out;
+    z-index: 0;
 }
 .darkMode a {
   color: var(--white);
 }
+.darkMode .sectionContent h2{
+    color: var(--white);
+    transition: 0.2s ease-in-out;
+}
 .lightMode{ 
-  background: var(--white);
-  background-image: url("/images/bg-pattern1.svg");
-  color: var(--black);
-  z-index: 0;
+    background: var(--white);
+    background-image: url("/images/bg-pattern1.svg");
+    color: var(--black);
+    transition: 0.2s ease-in-out;
+    z-index: 0;
 }
 .lightMode a {
   color: var(--white);
+}
+.lightMode .sectionContent h2{
+    color: var(--dark-grey);
+    transition: 0.2s ease-in-out;
 }

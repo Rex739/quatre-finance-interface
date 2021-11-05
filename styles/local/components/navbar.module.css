@@ -160,16 +160,25 @@
 }
 /* Light and dark mode */
 .darkMode{
-  background: var(--plantation-green);
+  background: var(--dark-mode1);
   background-image: url("/images/bg-pattern.svg");
+  transition: 0.2s ease-in-out;
 }
 .lightMode{ 
   background: var(--deep-fir-green);
   background-image: url("/images/bg-pattern.svg");
+  transition: 0.2s ease-in-out;
 }
 
 .lightMode .mobileNavWrapper  ul{
   background: var(--transparent-deep-fir-green);
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
+  transition: 0.2s ease-in-out;
+}
+.darkMode .mobileNavWrapper  ul{
+  background: var(--transparent-dark-mode2);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  transition: 0.2s ease-in-out;
 }

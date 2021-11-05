@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from '../../styles/local/components/navbar.module.css'
 import Image from 'next/image'
 
-const TopBar = ({isClicked, handleClick, toggleMode, lightMode}) => {
+const TopBar = ({isClicked, handleClick, toggleMode, lightMode, sound}) => {
     return ( 
         <section className={lightMode ? [styles.mobileNav, styles.lightMode, "list-unstyled"].join(" ") : [styles.mobileNav, styles.darkMode, "list-unstyled"].join(" ")}>
             <ul className="d-flex wrapper list-unstyled my-auto">
@@ -12,9 +12,7 @@ const TopBar = ({isClicked, handleClick, toggleMode, lightMode}) => {
                             <Image src="/images/logo.png" alt="logo" className="logo my-auto" id="logo" width={66} height={20} />
                         </a>
                     </Link>
-                    
                 </li>
-                {/* <i onClick={toggleMode} className={lightMode ? "bi bi-sun-fill sun-icon ms-auto my-auto px-2" : "bi bi-moon-fill moon-icon ms-auto my-auto px-2"}></i> */}
                 {/* hamburger button */}
                 <div className={isClicked ? "my-auto ms-auto" : "my-auto ms-auto"} onClick={handleClick}>
                     <div className={isClicked ? [styles.hamburger, styles.hamburgerX, "d-none"].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>

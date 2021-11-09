@@ -24,7 +24,7 @@ const DesktopNav = ({ lightMode, toggleMode, sound }) => {
                             </a>
                         </Link>
                     </li> */}
-                    <li className="my-auto">
+                    <li className="my-auto ms-auto">
                         <Link href="/development">
                             <a>
                                 <img src="images/app.svg" alt="app" width={32} height={20} className="mr-1" /> App

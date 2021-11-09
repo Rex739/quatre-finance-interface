@@ -17,13 +17,13 @@ const DesktopNav = ({ lightMode, toggleMode, sound }) => {
                             </a>
                         </Link>
                     </li>
-                    <li className="my-auto ms-auto">
+                    {/* <li className="my-auto ms-auto">
                         <Link href="/development">
                             <a>
                                 <img src="images/farm.svg" alt="farm" width={32} height={20} className="mr-1" /> Farm
                             </a>
                         </Link>
-                    </li>
+                    </li> */}
                     <li className="my-auto">
                         <Link href="/development">
                             <a>

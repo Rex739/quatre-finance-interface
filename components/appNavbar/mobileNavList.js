@@ -14,7 +14,7 @@ const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert, sound, 
                 <ul className={isClicked ? "d-flex list-unstyled m-0" : "d-none list-unstyled m-0"}>
                     <ol className="d-flex">
                         <div>
-                            <i onClick={switchMode} className={lightMode ? "bi bi-sun-fill sun-icon ms-auto my-auto px-2" : "bi bi-moon-fill moon-icon ms-auto my-auto px-2"}></i>
+                            <i onClick={switchMode} className={lightMode ? "bi bi-sun-fill sun-icon ms-auto my-auto" : "bi bi-moon-fill moon-icon ms-auto my-auto"}></i>
                         </div>
                         <div className={isClicked ? "py-2 ms-auto me-4 mb-5" : "my-auto ms-auto me-4 mb-5"} onClick={handleClick}>
                             <div className={isClicked ? [styles.hamburger, styles.hamburgerX].join(" ") : [styles.hamburger, styles.hamburgerBar].join(" ")} ></div>
@@ -26,9 +26,9 @@ const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert, sound, 
                     <ActiveLink href="/" handleClick={handleClick}>
                         <img src="images/home.svg" alt="home" width={40} height={40} className="me-2" /> Home
                     </ActiveLink>
-                    <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
+                    {/* <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
                         <img src="images/farm.svg" alt="farm" width={40} height={40} className="me-2" /> Farm
-                    </ActiveLink>
+                    </ActiveLink> */}
                     <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
                         <img src="images/app.svg" alt="app" width={40} height={40} className="me-2" /> App
                     </ActiveLink>

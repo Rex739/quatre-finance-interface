@@ -98,7 +98,7 @@ const RoadMap = ({ lightMode }, props) => {
                             <ul>
                                 <li className={styles.completed}>Solution documentation and planning</li>
                                 <li className={styles.completed}>Itemize Solution gathered from research and create some paperwork</li>
-                                <li className={styles.completed}>Project plannin</li>
+                                <li className={styles.completed}>Project planning</li>
                                 <li className={styles.completed}>Website: wireframing and UI/UX design to begin</li>
                                 <li>Sales research</li>
                             </ul>
@@ -120,7 +120,7 @@ const RoadMap = ({ lightMode }, props) => {
                                 <li>Complete Presale Contract code</li>
                                 <li>Website development begins</li>
                                 <li>Community development </li>
-                                <li>Sales roadmaps and plans</li>
+                                <li>Sales roadmap and plans</li>
                             </ul>
                         </div>
                     </div>

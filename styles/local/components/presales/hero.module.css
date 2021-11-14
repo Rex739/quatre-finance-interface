@@ -214,9 +214,9 @@
 /* Light and dark mode */
 
 .darkMode{
-    background: var(--plantation-green);
+    background: var(--dark-mode2);
     background-image: url("/images/bg-pattern.svg");
-    color: var(--black);
+    color: var(--white);
     z-index: 0;
   }
   .darkMode a {

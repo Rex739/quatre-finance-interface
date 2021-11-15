@@ -40,23 +40,24 @@ html{
 	}
 	/* button */
 	.app-btn{
-		background: var(--orange);
+		background: transparent;
+		border: 1px solid var(--orange);
 		transition: 0.2s ease-in-out;
 		outline: none;
 		display: flex;
 		flex-direction: row;
-		height: 40px;
-		max-width: 50%;
+		height: 52px;
 		min-width: 50%;
+		max-width: 128px;
 		justify-content: center;
 		align-items: center;
-		border: none;
 		border-radius: 5px;
 	}
 
 	.app-btn a{
 		font: 0.813rem/0.938rem var(--roboto);
 		text-decoration: none;
+		color: var(--orange)!important;
 	}
 	
 	/* .devWrap figure img:nth-child(2){
@@ -76,26 +77,27 @@ html{
 }
 @media all and (min-width: 375px){
   .app-btn{
-    height: 40px;
-    max-width: 90px;
-    min-width: 90px;
-  }
-}
-@media all and (min-width: 425px){
-  .app-btn{
-    background: var(--orange);
-    height: 40px;
     max-width: 128px;
     min-width: 128px;
   }
 }
+@media all and (min-width: 425px){
+  /* .app-btn{
+    height: 40px;
+    max-width: 128px;
+    min-width: 128px;
+  } */
+}
 @media all and (min-width: 768px){
-	
+	.wrapper{
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 @media all and (min-width: 1024px){
    
 	.wrapper{
-		width: 90%;
+		width: 80%;
 		margin: 0 auto;
 	}
 	.app-btn{
@@ -108,8 +110,11 @@ html{
 		text-decoration: none;
 	}
 	.app-btn:hover{
-		background: var(--plantation-green);
+		background: var(--orange);
 		transition: 0.2s ease-in-out;
+	}
+	.app-btn:hover a{
+		color: var(--white)!important;
 	}
 
 }
@@ -128,12 +133,12 @@ html{
 }
 /* sun icon */
 .bi-sun-fill{
-	color: var(--granny-apple);
+	color: var(--plantation-green);
 	font-size: 20px;
 }
 /* moon icon */
 .bi-moon-fill{
-	color: var(--granny-apple);
+	color: var(--shadow-green);
 	font-size: 20px;
 }
 .overlay{

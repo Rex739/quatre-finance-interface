@@ -66,18 +66,18 @@
 
 /* Light and dark mode */
 .darkMode{
-  background: var(--plantation-green);
-  background-image: url("/images/bg-pattern.svg");
-  color: var(--black);
+  background: var(--dark-mode1);
+  /* background-image: url("/images/bg-pattern.svg"); */
+  color: var(--white);
   z-index: 0;
 }
 .darkMode a {
   color: var(--white);
 }
 .lightMode{ 
-  background: var(--deep-fir-green);
-  background-image: url("/images/bg-pattern.svg");
-  color: var(--white);
+  background: var(--grey);
+  /* background-image: url("/images/bg-pattern.svg"); */
+  color: var(--black);
   z-index: 0;
 }
 .lightMode a {

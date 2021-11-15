@@ -1,8 +1,12 @@
 /* color file */
 :root{
     --black: #000000;
+    --black2: #1F2348;
+    --grey: #F3F3F3;
+    --transparent-grey: rgba(243, 243, 243, 0.9);
     --dark-mode1: #1D1B1B;
     --dark-mode2:#262929;
+    --transparent-dark-mode1:rgba(29, 27, 27, 0.9);
     --transparent-dark-mode2:rgba(38, 41, 41, 0.9);
     --white: #FFFFFF;
     --orange: #F7931A;

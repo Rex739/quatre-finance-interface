@@ -24,25 +24,25 @@ const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert, sound, 
                     </ol>
                     
                     <ActiveLink href="/" handleClick={handleClick}>
-                        <img src="images/home.svg" alt="home" width={40} height={40} className="me-2" /> Home
+                        <img src={lightMode ? "images/navbar/home.svg" : "images/navbar/home-dark.svg"} alt="home" width={40} height={40} className="me-2" /> Home
                     </ActiveLink>
                     {/* <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
                         <img src="images/farm.svg" alt="farm" width={40} height={40} className="me-2" /> Farm
                     </ActiveLink> */}
                     <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
-                        <img src="images/app.svg" alt="app" width={40} height={40} className="me-2" /> App
+                        <img src={lightMode ? "images/navbar/app.svg" : "images/navbar/app-dark.svg"} alt="app" width={40} height={40} className="me-2" /> App
                     </ActiveLink>
                     {/* <ActiveLink href="/#team " handleClick={handleClick}>
-                        <img src="images/team.svg" alt="team" width={40} height={40} className="me-2" /> Team
+                        <img src={lightMode ? "images/team.svg" : "images/team-dark.svg"} alt="team" width={40} height={40} className="me-2" /> Team
                     </ActiveLink> */}
-                    <ActiveLink href="/#footer" handleClick={handleClick}>
-                        <img src="images/contact.svg" alt="contact" width={40} height={40} className="me-2" /> Contact
-                    </ActiveLink>
+                    {/* <ActiveLink href="/#footer" handleClick={handleClick}>
+                        <img src={lightMode ? "images/navbar/contact.svg" : "images/navbar/contact-dark.svg"} alt="contact" width={40} height={40} className="me-2" /> Contact
+                    </ActiveLink> */}
                     <ActiveLink href="https://github.com/Quatre-Finance" handleClick={handleClick}>
-                        <img src="images/github.svg" alt="github" width={40} height={40} className="me-2" /> Github
+                        <img src={lightMode ? "images/navbar/github.svg" : "images/navbar/github-dark.svg" } alt="github" width={40} height={40} className="me-2" /> Github
                     </ActiveLink>
                     <ActiveLink href="https://github.com/Quatre-Finance/Q-paper#welcome-to-quatre-finance" handleClick={handleClick}>
-                        <img src="images/docs.svg" alt="docs" width={40} height={40} className="me-2" /> Docs
+                        <img src={lightMode ? "images/navbar/docs.svg" : "images/navbar/docs-dark.svg" } alt="docs" width={40} height={40} className="me-2" /> Docs
                     </ActiveLink>
                 </ul>
             </nav>

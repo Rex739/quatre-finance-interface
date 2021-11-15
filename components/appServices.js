@@ -14,7 +14,7 @@ const AppServices1 = ({ lightMode }) => {
                             Enjoy the super <b>FOUR</b> benefits of lending and borrowing asset,
                             via a peer to peer structure, staking and participating in Quatrefinance ecosystem.
                         </p>
-                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_core/Q_core.md#quatre-four-q-core" target="_newtab">Learn more</a></button>
+                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_core/Q_core.md#quatre-four-q-core" target="_newtab">Read More</a></button>
                     </article>
                     <article>
                         <h1>Single Lending & Borrowing</h1>
@@ -23,7 +23,7 @@ const AppServices1 = ({ lightMode }) => {
                             desire utmost control over your funds and set parameters as your wish?
                             If your answer is other than &quot;No&quot;, then this category best fits your need.
                         </p>
-                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_lend/QLend.md#quatre-landb-q-landb" target="_newtab">Learn more</a></button>
+                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_lend/QLend.md#quatre-landb-q-landb" target="_newtab">Read More</a></button>
                     </article>
                 </section>
             </div>

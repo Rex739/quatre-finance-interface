@@ -19,57 +19,6 @@
     .sectionContent img{
         width: 100%;
     }
-    /* .sectionContent img:first-child{
-        display: block;
-    }
-    .sectionContent img:last-child{
-        display: none;
-    } */
-    /* .slideWrapper{
-        margin: 1.5rem 0;
-        width: 100%;
-    }
-    .slideWrapper h2{
-        font: 0.938rem/1rem var(--roboto)!important;
-        font-weight: 700 !important;
-        color: var(--persian-green) !important;
-        text-align: left !important;
-    }   
-     .slideWrapper h1{
-        font: 1.125rem/1rem var(--roboto)!important;
-        font-weight: bold !important;
-        color: var(--dark-grey) !important;
-        text-align: left !important;
-    }   
-    .listVector{
-        display: flex;
-        flex-direction: row;
-    }
-    .listVector:first-child{
-        background: var(--orange);
-        border-radius: 50%;
-        height: 19px;
-        width: 19px;
-    }
-    .line{
-        background: var(--grey-green);
-        height: 400px;
-        width: 3px;
-        margin: 1.17rem auto;
-    }
-    .slideWrapper div ul li{
-        display: flex;
-        align-items: center;
-        list-style: none;
-        background: url("/images/check.svg") no-repeat 0 0;
-        background-position: left center;
-        padding: 0rem 0 0 1.3rem ;
-        margin: 0.5rem auto;
-        font: 0.75rem/1.2rem var(--roboto);  
-    }
-    .completed{
-        background: url("/images/double-check.svg") no-repeat 0 0!important;
-    } */
 }
 @media all and (min-width: 768px){
     .sectionContent h2{
@@ -98,26 +47,11 @@
         font-weight: bold;
         text-align: center;
     }
-    /* .slideWrapper div ul li{
-        font: 1.125rem/2rem var(--roboto);
-        margin: 0.5rem auto;  
-    }
-    .line{
-        height: 500px;
-    } */
 }
 @media all and (min-width: 1440px){
     .sectionContainer{
         padding: 2rem 0;
     }
-     /* .slideWrapper div ul li{
-        font: 1.25rem/2rem var(--roboto);
-        margin: 0.5rem auto;  
-    }
-    .line{
-        height: 600px;
-    } */
-
 }
 
 /* Light and dark mode */
@@ -136,7 +70,7 @@
     transition: 0.2s ease-in-out;
 }
 .lightMode{ 
-    background: var(--white);
+    background: var(--grey);
     /* background-image: url("/images/bg-pattern1.svg"); */
     color: var(--black);
     transition: 0.2s ease-in-out;

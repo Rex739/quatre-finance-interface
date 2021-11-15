@@ -17,45 +17,45 @@ const DesktopNav = ({ lightMode, toggleMode, sound }) => {
                             </a>
                         </Link>
                     </li>
-                    {/* <li className="my-auto ms-auto">
-                        <Link href="/development">
+                    <li className="my-auto ms-auto">
+                        <Link href="/">
                             <a>
-                                <img src="images/farm.svg" alt="farm" width={32} height={20} className="mr-1" /> Farm
+                                <img src={lightMode ? "images/navbar/home.svg" : "images/navbar/home-dark.svg"} alt="home" width={32} height={20} className="mr-1" /> Home
                             </a>
                         </Link>
-                    </li> */}
-                    <li className="my-auto ms-auto">
+                    </li>
+                    <li className="my-auto">
                         <Link href="/development">
                             <a>
-                                <img src="images/app.svg" alt="app" width={32} height={20} className="mr-1" /> App
+                                <img src={lightMode ? "images/navbar/app.svg" : "images/navbar/app-dark.svg" } alt="app" width={32} height={20} className="mr-1" /> App
                             </a>
                         </Link>
                     </li>
                     {/* <li className="my-auto">
                         <Link href="/#team">
                             <a>
-                                <img src="images/team.svg" alt="team" width={32} height={20} className="mr-1" /> Team
+                                <img src="images/navbar/team.svg" alt="team" width={32} height={20} className="mr-1" /> Team
+                            </a>
+                        </Link>
+                    </li> */}
+                    {/* <li className="my-auto">
+                        <Link href="/#footer">
+                            <a>
+                                <img src={lightMode ? "images/navbar/contact.svg" : "images/navbar/contact-dark.svg"} alt="contact" width={32} height={20} className="mr-1" /> Contact
                             </a>
                         </Link>
                     </li> */}
                     <li className="my-auto">
-                        <Link href="/#footer">
-                            <a>
-                                <img src="images/contact.svg" alt="contact" width={32} height={20} className="mr-1" /> Contact
-                            </a>
-                        </Link>
-                    </li>
-                    <li className="my-auto">
                         <Link href="https://github.com/Quatre-Finance" >
                             <a target="_newtab">
-                                <img src="images/github.svg" alt="github" width={32} height={20} className="mr-1" /> Github
+                                <img src={lightMode ? "images/navbar/github.svg" : "images/navbar/github-dark.svg"} alt="github" width={32} height={20} className="mr-1" /> Github
                             </a>
                         </Link>
                     </li>
                     <li className="my-auto">
                         <Link href="https://medium.com/@QuatreFinance" >
                             <a target="_newtab">
-                                <img src="images/docs.svg" alt="docs" width={32} height={20} className="mr-1" /> Docs
+                                <img src={lightMode ? "images/navbar/docs.svg" : "images/navbar/docs-dark.svg"} alt="docs" width={32} height={20} className="mr-1" /> Docs
                             </a>
                         </Link>
                     </li>

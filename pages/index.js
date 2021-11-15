@@ -4,8 +4,9 @@ import AppServices2 from '../components/appServices2'
 import Cards from '../components/cards'
 import Hero from '../components/hero'
 import RoadMap from '../components/roadMap'
+import Tokenomics from '../components/tokenomics'
 // import Team from '../components/team/team'
-import Whitepaper from '../components/whitepaper'
+
 
 // import components
 
@@ -15,7 +16,7 @@ const Home = ({isClicked, lightMode, handleAlert }) => {
     <>
       <Head>
         <title>Quatre Finance</title>
-        <meta charset="utf-8"/>
+        <meta charSet="utf-8"/>
         <meta name="description" content="Quatre... Bringing you the full power of decentralization Join the ecosystem of decentralized app users and earn in multiple ways"/>
         <meta name="keyword" content="Next App"/>
         <meta name="author" content="Quatre Team"/>
@@ -42,9 +43,8 @@ const Home = ({isClicked, lightMode, handleAlert }) => {
         <RoadMap
           lightMode={lightMode}
         />
-        <Whitepaper 
+        <Tokenomics 
           lightMode={lightMode}
-          handleAlert={handleAlert}
         />
         {/* <Team 
           lightMode={lightMode}

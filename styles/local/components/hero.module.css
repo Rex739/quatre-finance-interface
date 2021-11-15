@@ -36,7 +36,7 @@
     display: none;
   }
   .tradeBtn{
-    background: var(--orange);
+    background: transparent;
     transition: 0.2s ease-in-out;
     outline: none;
     display: flex;
@@ -46,27 +46,14 @@
     min-width: 100%;
     justify-content: center;
     align-items: center;
-    border: none;
+    border: 1px solid var(--orange);
     border-radius: 5px;
   }
-  .subscribeBtn{
-    background: var(--orange);
-    transition: 0.2s ease-in-out;
-    outline: none;
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius:0 5px 5px 0;
-  }
-  .subscribeBtn a, .tradeBtn a{
+  .tradeBtn a{
     font: 0.813rem/0.938rem var(--roboto);
     text-decoration: none;
   }
-  .form::placeholder{
+  /* .form::placeholder{
     padding-left: 1.5rem;
     width: 400px;
     font: 0.813rem/0.938rem var(--roboto);
@@ -83,12 +70,7 @@
   }
   .inputWrapper div{
     margin: 0.5rem 0;
-  }
-  .inputWrapper div input[type=email]:focus{
-    font: 0.813rem/0.938rem var(--roboto);
-    color: var(--white);
-    padding-left: 0.02rem;
-  }
+  } */
   .heroImg{
     display: block;
     position: absolute;
@@ -100,25 +82,28 @@
     display: none;
   }
 }
-@media all and (min-width: 375px){
+@media all and (min-width: 320px){
   .tradeBtn{
     height: 40px;
     max-width: 90px;
     min-width: 90px;
   }
-  .subscribeBtn{
+  .communityBtn{
+    margin-left: 0.5rem;
+  }
+  /* .subscribeBtn{
     height: 40px;
     width: 85px;
   }
   .form{
     height: 40px;
     width: 138px;
-  }
+  } */
   .inputWrapper{
     flex-direction: row;
     width: 100%;
   }
-  .inputWrapper div{
+  /* .inputWrapper div{
     margin: 0 0 0 20px;
   }
   .form::placeholder{
@@ -126,18 +111,31 @@
     width: 400px;
     font: 0.7rem/0.938rem var(--roboto);
     color: var(--white);
-  }
+  } */
 }
 @media all and (min-width: 425px){
   .tradeBtn{
-    background: var(--orange);
     height: 40px;
     max-width: 128px;
     min-width: 128px;
   }
-  .form{
+  /* .form{
     height: 40px;
     width: 150px;
+  } */
+}
+@media all and (min-width: 425px){
+  .sectionContent div:first-child{
+    width: 60%;
+  }
+}
+@media all and (min-width: 768px){
+  .sectionContent{
+    padding: 2rem 0 4rem;
+  }
+  .heroImg{
+    top: 150px;
+    right: 10%;
   }
 }
 @media all and (min-width: 1024px){
@@ -152,7 +150,7 @@
   .desktopHeroImg{
     display: flex;
     width: 100%;
-    height: 70%;
+    height: auto;
     margin-left: auto;
   }
   .sectionContent div h1{
@@ -178,30 +176,34 @@
     max-width: 158px;
     min-width: 158px;
   }
-  .tradeBtn:hover, .subscribeBtn:hover{
-    background: var(--plantation-green);
+  .tradeBtn:hover{
+    background: var(--orange);
     transition: 0.2s ease-in-out;
   }
-  .subscribeBtn{
+  .tradeBtn:hover a{
+    color: var(--white)!important;
+  }
+  /* .subscribeBtn{
     height: 52px;
     width: 109px;
-  }
+  } */
   .subscribeBtn a, .tradeBtn a{
     font: 1rem/1.125rem var(--roboto);
     text-decoration: none;
   }
-  .form{
+  /* .form{
     height: 52px;
     width: 281px;
   }
   .inputWrapper {
     margin: 5rem 0;
-  }
+  } */
 }
 @media all and (min-width: 1440px){
   .sectionContent div h1{
     font: 4.688rem/5.494rem var(--roboto);
     font-weight: 700;
+    margin-bottom: 3rem;
   }
   .sectionContent h2{
     font: 3rem/3.5rem var(--roboto);
@@ -221,7 +223,7 @@
 /* Light and dark mode */
 .darkMode{
   background: var(--dark-mode1);
-  background-image: url("/images/bg-pattern.svg");
+  /* background-image: url("/images/bg-pattern.svg"); */
   color: var(--white);
   transition: 0.2s ease-in-out;
   z-index: 0;
@@ -229,13 +231,19 @@
 .darkMode a {
   color: var(--white);
 }
+.darkMode .tradeBtn a {
+  color: var(--orange);
+}
 .lightMode{ 
-  background: var(--deep-fir-green);
-  background-image: url("/images/bg-pattern.svg");
-  color: var(--white);
+  background: var(--grey);
+  /* background-image: url("/images/bg-pattern.svg"); */
+  color: var(--black2);
   transition: 0.2s ease-in-out;
   z-index: 0;
 }
 .lightMode a {
-  color: var(--white);
+  color: var(--black);
+}
+.lightMode .tradeBtn a{
+  color: var(--orange);
 }

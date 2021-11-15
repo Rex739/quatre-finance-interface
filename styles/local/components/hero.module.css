@@ -126,15 +126,22 @@
 }
 @media all and (min-width: 425px){
   .sectionContent div:first-child{
-    width: 60%;
+    width: 70%;
   }
 }
 @media all and (min-width: 768px){
   .sectionContent{
     padding: 2rem 0 4rem;
   }
+  .sectionContent div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start
+    ;
+  }
   .heroImg{
-    top: 150px;
+    top: 120px;
     right: 10%;
   }
 }

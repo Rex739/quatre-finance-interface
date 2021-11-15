@@ -25,8 +25,8 @@ const AppServices2 = ({ lightMode}) => {
                             to fully experience the power of blockchain technology in securing and preserving
                             what matters to you.
                             <br/> 
-                            <strong>Coming soon ...</strong>
                         </p>
+                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_wallet/Q_Wallet.md" target="_newtab">Learn more</a></button>
                     </article>
                 </section>
             </div>

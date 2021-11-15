@@ -24,7 +24,7 @@ const Footer = ({lightMode}) => {
                     </ul>
                     <ul className="list-unstyled">
                         <li>HELP</li>
-                        <li><a href="mailto:%20support@quatre.finance">Customer Support</a></li>
+                        <li><a href="mailto:%20support@quatre.finance" target="_newtab">Customer Support</a></li>
                         {/* <li><a href="">Troubleshooting</a></li> */}
                         {/* <li><a href="">Guides</a></li> */}
                     </ul>

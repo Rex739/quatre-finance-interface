@@ -17,16 +17,16 @@ const Footer = ({lightMode}) => {
                     </ul>
                     <ul className="list-unstyled">
                         <li>ABOUT</li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Brand</a></li>
+                        <li><a href="mailto:%20support@quatre.finance" target="_newtab">Contact</a></li>
+                        <li><a href="mailto:%20hello@quatre.finance" target="_newtab">Brand</a></li>
                         <li><a href="https://medium.com/@QuatreFinance" target="_newtab">Blog</a></li>
                         <li><a href="https://t.me/quatrefinance" target="_newtab">Community</a></li>
                     </ul>
                     <ul className="list-unstyled">
                         <li>HELP</li>
-                        <li><a href="">Customer Support</a></li>
-                        <li><a href="">Troubleshooting</a></li>
-                        <li><a href="">Guides</a></li>
+                        <li><a href="mailto:%20support@quatre.finance">Customer Support</a></li>
+                        {/* <li><a href="">Troubleshooting</a></li> */}
+                        {/* <li><a href="">Guides</a></li> */}
                     </ul>
                     <ul className="list-unstyled">
                         <li>DEVELOPERS</li>

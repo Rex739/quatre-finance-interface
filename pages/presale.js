@@ -4,6 +4,7 @@ import PresaleInfo from '../components/presales/presaleInfo';
 import PresaleTokenomics from '../components/presales/presaleTokenomics';
 import Hero from '../components/presales/hero';
 import HowToClaim from '../components/presales/howToClaim';
+import PresaleMethod from '../components/presales/presaleMethod';
 
 const Presales = ({lightMode }) => {
     return ( 
@@ -12,6 +13,9 @@ const Presales = ({lightMode }) => {
                 lightMode={lightMode}
             />
             <HowToClaim
+                lightMode={lightMode}
+            />
+            <PresaleMethod
                 lightMode={lightMode}
             />
             <PresaleInfo

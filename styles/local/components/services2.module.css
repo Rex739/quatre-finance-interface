@@ -45,7 +45,7 @@
         font-weight: 700;  
     }
    .sectionContent section article p {
-        font: 1.25rem/2rem var(--roboto);
+        font: 1.125rem/2rem var(--roboto);
         font-weight: 300;
    }
 }

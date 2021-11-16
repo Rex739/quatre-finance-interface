@@ -35,14 +35,14 @@
   .inputWrapper::-webkit-scrollbar {
     display: none;
   }
-  @keyframes spread{
+  /* @keyframes spread{
         from {
             box-shadow: 0;
         }
         to {
             box-shadow: 0px 0px 1px 1px var(--orange);
         }
-    }
+    } */
   .tradeBtn{
     background: var(--orange);
     transition: 0.2s ease-in-out;
@@ -64,7 +64,7 @@
   }
   .communityBtn{
     background: transparent;
-    animation: 0.5s spread ease infinite alternate;
+    /* animation: 0.5s spread ease infinite alternate; */
   }
   .communityBtn a{
     color: var(--orange)!important;

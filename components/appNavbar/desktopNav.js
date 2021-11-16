@@ -31,13 +31,13 @@ const DesktopNav = ({ lightMode, toggleMode, sound }) => {
                             </a>
                         </Link>
                     </li>
-                    {/* <li className="my-auto">
-                        <Link href="/#team">
-                            <a>
-                                <img src="images/navbar/team.svg" alt="team" width={32} height={20} className="mr-1" /> Team
+                    <li className="my-auto">
+                        <Link href="https://github.com/Quatre-Finance/Q-paper/blob/main/TEAM.md">
+                            <a target="_newtab">
+                                <img src={lightMode ? "images/navbar/team.svg" : "images/navbar/team-dark.svg"} alt="team" width={32} height={20} className="mr-1" /> Team
                             </a>
                         </Link>
-                    </li> */}
+                    </li>
                     {/* <li className="my-auto">
                         <Link href="/#footer">
                             <a>

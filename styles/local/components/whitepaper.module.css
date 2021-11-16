@@ -5,7 +5,7 @@
     .sectionContent{
         display: flex;
         flex-direction: column;
-        ustify-content: space-between;
+        justify-content: space-between;
         align-items: center;
         border-radius: 10px;
     }
@@ -43,9 +43,8 @@
     }
 }   
 @media all and (min-width: 1024px){
-
-    .sectionContainer{
-        margin-top: -3rem;
+     .sectionContainer{
+        margin-top: -1rem;
     }
     .sectionContent{
         justify-content: flex-start;
@@ -76,12 +75,13 @@
    } */
 }
 @media all and (min-width: 1440px){
+     .sectionContainer{
+        margin-top: -3rem;
+    }
     .sectionContainer{
         padding: 0 0 4.438rem 0;
     }
-
 }
-
 /* Light and dark mode */
 .darkMode{
     background: var(--dark-mode1);

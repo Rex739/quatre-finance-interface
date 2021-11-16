@@ -18,11 +18,11 @@
       margin: 3.25rem 0;
     }
     .sectionContent ul li:first-child {
-      font: 0.9375rem/1.125rem var(--roboto);
+      font: 1.125em/1.8rem var(--roboto);
       font-weight: 700;
     }
     .sectionContent ul li {
-      font: 0.9375rem/1.125rem var(--roboto);
+      font: 1.125rem/1.8rem var(--roboto);
       font-weight: 300;
       margin: 8px 0;
     }
@@ -88,11 +88,11 @@
    }
 }
 @media all and (min-width: 375px){
-     .sectionContent div p{
-        font: 1.125rem/1.8rem var(--roboto);
-        font-weight: 300;
-        color: var(--shadow-green);
-    }
+  .sectionContent div p{
+    font: 1.125rem/1.8rem var(--roboto);
+    font-weight: 300;
+    color: var(--shadow-green);
+  }
 }
 @media all and (min-width: 768px){
   .sectionContent nav{
@@ -125,6 +125,9 @@
   .sectionContainer{
     padding: 3rem 0;
   }
+  .subscribeBtn{
+      font: 1rem/1.6rem var(--roboto);
+    }
 }
 
 /* Light and dark mode */

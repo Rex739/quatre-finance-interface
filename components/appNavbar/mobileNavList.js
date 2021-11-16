@@ -32,9 +32,9 @@ const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert, sound, 
                     <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
                         <img src={lightMode ? "images/navbar/app.svg" : "images/navbar/app-dark.svg"} alt="app" width={40} height={40} className="me-2" /> App
                     </ActiveLink>
-                    {/* <ActiveLink href="/#team " handleClick={handleClick}>
-                        <img src={lightMode ? "images/team.svg" : "images/team-dark.svg"} alt="team" width={40} height={40} className="me-2" /> Team
-                    </ActiveLink> */}
+                    <ActiveLink href="/#team " handleClick={handleClick}>
+                        <img src={lightMode ? "images/navbar/team.svg" : "images/navbar/team-dark.svg"} alt="team" width={40} height={40} className="me-2" /> Team
+                    </ActiveLink>
                     {/* <ActiveLink href="/#footer" handleClick={handleClick}>
                         <img src={lightMode ? "images/navbar/contact.svg" : "images/navbar/contact-dark.svg"} alt="contact" width={40} height={40} className="me-2" /> Contact
                     </ActiveLink> */}

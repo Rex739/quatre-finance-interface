@@ -73,6 +73,8 @@
 @media all and (min-width: 693px){
     .sectionContent{
         flex-direction: row;
+        justify-content: space-between;
+
     }
 
     /* .claimDetails{

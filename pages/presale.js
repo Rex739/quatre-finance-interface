@@ -5,6 +5,7 @@ import PresaleTokenomics from '../components/presales/presaleTokenomics';
 import Hero from '../components/presales/hero';
 import HowToClaim from '../components/presales/howToClaim';
 import PresaleMethod from '../components/presales/presaleMethod';
+import Tokenomics from '../components/tokenomics';
 
 const Presales = ({lightMode }) => {
     return ( 
@@ -27,7 +28,7 @@ const Presales = ({lightMode }) => {
             <RoadMap 
                 lightMode={lightMode}
             />
-            <WhitePaper 
+            <Tokenomics 
                 lightMode={lightMode}
             />
         </main>

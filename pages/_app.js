@@ -23,13 +23,13 @@ const MyApp = ({ Component, pageProps }) => {
     e.preventDefault()
     return alert("still in development".toUpperCase())
   }
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 8000);
+    }, 3000);
   }, [])
   return (
     <main >

@@ -9,6 +9,7 @@ html{
 	font-family: var(--roboto);
 }
 .app{
+	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;

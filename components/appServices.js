@@ -14,7 +14,7 @@ const AppServices1 = ({ lightMode }) => {
                             Enjoy the super <b>FOUR</b> benefits of lending and borrowing asset,
                             via a peer to peer structure, staking and participating in Quatrefinance ecosystem.
                         </p>
-                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_core/Q_core.md#quatre-four-q-core" target="_newtab">learn More</a></button>
+                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_core/Q_core.md#quatre-four-q-core" target="_newtab">Learn More</a></button>
                     </article>
                     <article>
                         <h1>Single Lending & Borrowing</h1>

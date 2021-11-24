@@ -15,7 +15,7 @@ const AppServices2 = ({ lightMode}) => {
                             with you and your worries about providing KYC and personal data are over. 
                             You also enjoy the benefits of being part of the ecosystem.  
                         </p>
-                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_bands/Q_bands.md#quatre-buy-and-sell-q-bands" target="_newtab">Learn more</a></button> 
+                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_bands/Q_bands.md#quatre-buy-and-sell-q-bands" target="_newtab">Learn More</a></button> 
                     </article>
                     <article>
                         <h1>Q-Wallet</h1>
@@ -26,7 +26,7 @@ const AppServices2 = ({ lightMode}) => {
                             what matters to you.
                             <br/> 
                         </p>
-                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_wallet/Q_Wallet.md" target="_newtab">Learn more</a></button>
+                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_wallet/Q_Wallet.md" target="_newtab">Learn More</a></button>
                     </article>
                 </section>
             </div>

@@ -63,6 +63,10 @@
       color: var(--white);
       padding-left: 0.02rem;
     }
+
+    .formDarkBg{
+      background-color: var(--deep-fir-green);
+    }
     .subscribeBtn{
       background: var(--orange);
       transition: 0.2s ease-in-out;
@@ -114,6 +118,10 @@
     width: 100%;
     margin: 2rem 0
   }
+
+  .aboutLight li a, .helpLight li a, .devLight li a{
+    color: var(--deep-fir-green);
+  }
 }   
 @media all and (min-width: 1024px){
   .socials img{
@@ -132,7 +140,7 @@
 
 /* Light and dark mode */
 .darkMode{
-  background: var(--black);
+  background: var(--dark-mode1);
   /* background-image: url("/images/bg-pattern.svg"); */
   color: var(--white);
   transition: 0.2s ease-in-out;
@@ -146,9 +154,10 @@
   border: 1px solid var(--dark-mode2)
 }
 .lightMode{ 
-  background: var(--deep-fir-green);
+  /* background: var(--deep-fir-green); */
+  background: var(--grey);
   /* background-image: url("/images/bg-pattern1.svg"); */
-  color: var(--white);
+  color: var(--deep-fir-green);
   transition: 0.2s ease-in-out;
   z-index: 0;
 }

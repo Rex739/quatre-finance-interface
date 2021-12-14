@@ -1,7 +1,15 @@
+import { useState } from 'react';
 import styles from '../../styles/local/components/presales/presaleInfo.module.css';
 
 const PresaleInfo = ({ lightMode }) => {
-    
+    const [copied, setCopied] = useState(false);
+
+    const copyToClip = (e) => {
+        navigator.clipboard.writeText(e.target.defaultValue);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1500);
+    };
+
     return(
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}>
             <div className={[styles.sectionContent, "wrapper"].join(" ")}>
@@ -15,15 +23,17 @@ const PresaleInfo = ({ lightMode }) => {
                         
                     </div>
                 </div>
-                <div className={styles.presale}>
+                <div className={lightMode ? styles.presale : styles.presaleDark}>
                     <h2>Presale</h2>
-                    <p className={styles.useWallet}>
+                    <p className={lightMode ? styles.useWallet : styles.useWalletDark}>
                         Use your wallet to send ETH to the presale address below. Our system will send UNIX to your wallet instantly.
                     </p>
-                    <p className={styles.address}>
+                    <p className={lightMode ? styles.address : styles.addressDark}>
                         Presale Address:
+                        <p className={copied ? styles.showNotify : styles.hideNotify}>Copied!</p>
                     </p>
-                    <input type="text" defaultValue="0x752915cf84Cf498C260F8A87AE26c"/>
+                    
+                    <input type="button" onClick={copyToClip} defaultValue="0x752915cf84Cf498C260F8A87AE26c"/>
                     <p className={styles.toCopy}>
                         (Click to copy)
                     </p>

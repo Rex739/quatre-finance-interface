@@ -63,6 +63,13 @@
 
     .airdropBtn{
         background-color: transparent;
+        color: var(--deep-fir-green) !important;
+        border: 2px solid var(--deep-fir-green);
+    }
+
+    .airdropBtnDark{
+        color: var(--white);
+        background-color: transparent;
         border: 2px solid var(--white);
     }
 
@@ -214,7 +221,7 @@
 /* Light and dark mode */
 
 .darkMode{
-    background: var(--dark-mode2);
+    background: var(--dark-mode1);
     background-image: url("/images/bg-pattern.svg");
     color: var(--white);
     z-index: 0;
@@ -223,9 +230,10 @@
     color: var(--white);
   }
   .lightMode{ 
-    background: var(--deep-fir-green);
+    /* background: var(--deep-fir-green); */
+    background: var(--grey);
     background-image: url("/images/bg-pattern.svg");
-    color: var(--white);
+    color: var(--deep-fir-green);
     z-index: 0;
   }
   .lightMode a {

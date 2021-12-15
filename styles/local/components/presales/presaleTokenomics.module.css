@@ -86,18 +86,18 @@
 /* Light and dark mode */
 
 .darkMode{
-    background: var(--plantation-green);
+    background: var(--dark-mode1);
     background-image: url("/images/bg-pattern.svg");
-    color: var(--black);
+    color: var(--white);
     z-index: 0;
   }
   .darkMode a {
     color: var(--white);
   }
   .lightMode{ 
-    background: var(--white);
+    background: var(--grey);
     background-image: url("/images/bg-pattern.svg");
-    color: var(--black);
+    color: var(--deep-fir-green);
     z-index: 0;
   }
   .lightMode a {

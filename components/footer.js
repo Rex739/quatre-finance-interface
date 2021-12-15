@@ -15,20 +15,20 @@ const Footer = ({lightMode}) => {
                             </Link>
                         </li>
                     </ul>
-                    <ul className="list-unstyled">
+                    <ul className={lightMode ? [styles.aboutLight, "list-unstyled"].join(" ") : ["list-unstyled"].join(" ")}>
                         <li>ABOUT</li>
                         <li><a href="mailto:%20support@quatre.finance" target="_newtab">Contact</a></li>
                         <li><a href="mailto:%20hello@quatre.finance" target="_newtab">Brand</a></li>
                         <li><a href="https://medium.com/@QuatreFinance" target="_newtab">Blog</a></li>
                         <li><a href="https://t.me/quatrefinance" target="_newtab">Community</a></li>
                     </ul>
-                    <ul className="list-unstyled">
+                    <ul className={lightMode ? [styles.helpLight, "list-unstyled"].join(" ") : ["list-unstyled"].join(" ")}>
                         <li>HELP</li>
                         <li><a href="mailto:%20support@quatre.finance" target="_newtab">Customer Support</a></li>
                         {/* <li><a href="">Troubleshooting</a></li> */}
                         {/* <li><a href="">Guides</a></li> */}
                     </ul>
-                    <ul className="list-unstyled">
+                    <ul className={lightMode ? [styles.devLight, "list-unstyled"].join(" ") : ["list-unstyled"].join(" ")}>
                         <li>DEVELOPERS</li>
                         <li><a href="https://github.com/Quatre-Finance" target="_newtab">Github</a></li>
                         <li><a href="https://github.com/Quatre-Finance/Q-paper#welcome-to-quatre-finance" target="_newtab">Documentation</a></li>
@@ -47,7 +47,7 @@ const Footer = ({lightMode}) => {
                         <li>
                             <div className={["d-flex flex-row", styles.inputWrapper, styles.input1].join(" ")}>
                                 <form action="">
-                                    <input className={styles.form} placeholder="Email Address" type="email" required />
+                                    <input className={lightMode ? [styles.form, styles.formDarkBg].join(" ") : [styles.form].join(" ")} placeholder="Email Address" type="email" required />
                                 </form>
                                 <button className={styles.subscribeBtn} type="submit"><a href="">Subscribe</a></button>
                             </div>

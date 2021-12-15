@@ -33,7 +33,7 @@ const Hero = ({ lightMode }) => {
             <div className={[styles.sectionContent, "wrapper"].join(" ")}>
                 <div className={styles.heroInfo}>
                     <div className={styles.heroImgContainer}>
-                        <img src={img.src} className={styles.heroImg}/>
+                        <img src={img.src} alt='User' className={styles.heroImg}/>
                         <div className={styles.box}>
 
                         </div>
@@ -44,7 +44,7 @@ const Hero = ({ lightMode }) => {
                             UNIX is the abbreviation of UNIXSWAP. UNIX is a hard fork of UNI, which aims to eliminate the inherent flaws of UNI,simplify the user threshold, and provide lower rates to improve the DEFecosystem. UNIX has a total supply of 500,000, which is only 1/2,000 of UNI. It is intended to create high-priced coins to attract popularity!
                         </p>
                         <div className={styles.buttonsContainer}>
-                            <button className={styles.airdropBtn}>Airdrop</button>
+                            <button className={lightMode ? styles.airdropBtn : styles.airdropBtnDark}>Airdrop</button>
                             <button className={styles.presaleBtn}>Presale</button>
                         </div>
                     </div>

@@ -19,7 +19,7 @@
     .airdrop h2{
         font: 1.75rem/2.051rem var(--roboto);
         font-weight: 500;
-        color: #FFFFFF;
+        color: var(--deep-fir-green);
     }
 
     .airdrop .claim{
@@ -32,7 +32,7 @@
     }
 
     .airdrop .box{
-        background-color: var(--transparent-white);
+        background-color: var(--grey);
         display: none;
     }
 
@@ -42,6 +42,15 @@
         border-top-left-radius: 7px;
         border-bottom-left-radius: 7px;
         padding: 0.25rem;
+        height: 36px;
+        /* border-color: var(--grey); */
+        border: none;
+        outline: none;
+        background-color: var(--grey);
+    }
+
+    .claim input:focus{
+        outline: none;
     }
 
     .claim button{
@@ -58,35 +67,52 @@
     }
 
     /* Presale Column */
-    .presale{
+    .presale, .presaleDark{
         width: 100%;
         margin: 0 auto;
     }
 
-    .presale h2{
+    .presaleDark{
+        color: var(--white);
+    }
+
+    .presale h2, .presaleDark h2{
         font: 1.75rem/2.051rem var(--roboto);
         font-weight: 500;
-        color: var(--white);
+        color: var(--deep-fir-green);
         margin: 2rem 0;
     }
 
-    p.useWallet {
+    .presaleDark h2{
+        color: var(--white);
+    }
+
+    p.useWallet, p.useWalletDark {
         font: 1.125rem/1.625rem var(--roboto);
         font-weight: 400;
-        color: var(--white);
+        color: var(--deep-fir-green);
         margin-bottom: 2.5rem;
         width: 90%;
         max-width: 500px;
     }
 
-    p.address{
-        font: 1.125rem/1.318rem var(--roboto);
-        font-weight: 400;
+    p.useWalletDark{
         color: var(--white);
-        margin-bottom: 0.3rem;
     }
 
-    .presale input{
+    p.address, p.addressDark{
+        font: 1.125rem/1.318rem var(--roboto);
+        font-weight: 400;
+        color: var(--deep-fir-green);
+        margin-bottom: 0.3rem;
+        position: relative;
+    }
+
+    p.addressDark{
+        color: var(--white);
+    }
+
+    .presale input, .presaleDark input{
         width: 90%;
         max-width: 324px;
         border-radius: 7px;
@@ -95,22 +121,41 @@
         opacity: 0.81;
     }
 
-    .presale .toCopy{
+    .presale .hideNotify, .presaleDark .hideNotify{
+        display: none;
+    }
+
+    .presale .showNotify, .presaleDark .showNotify{
+        position: absolute;
+        z-index: 3;
+        margin: 0;
+        padding: 0.25em 0.5em;
+        left: 0px;
+        top: -30px;
+        display: block;
+        background-color: var(--grey);
+        color: var(--black2);
+        border-radius: 9px;
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+
+    .presale .toCopy, .presaleDark .toCopy{
         font: 1.125rem/1.313rem var(--roboto);
         color: var(--white);
         opacity: 0.59;
         margin-top: 0.3rem;
     }
 
-    .presale .joinTelegram{
+    .presale .joinTelegram, .presaleDark .joinTelegram{
         text-align: center;
     }
 
     .joinTelegram button{
         background-color: transparent;
-        color: var(--white);
+        color: var(--deep-fir-green);
         padding: 1rem;
-        border: 1px solid var(--white);
+        border: 1px solid var(--deep-fir-green);
         border-radius: 7px;
         text-align: center;
         margin: 0 auto;
@@ -139,7 +184,7 @@
         
     }
 
-    .presale{
+    .presale, .presaleDark{
         margin-left: 1.5rem;
     }
 }
@@ -147,18 +192,18 @@
 /* Light and dark mode */
 
 .darkMode{
-  background: var(--plantation-green);
+  background: var(--dark-mode2);
   background-image: url("/images/bg-pattern.svg");
-  color: var(--black);
+  color: var(--white);
   z-index: 0;
 }
 .darkMode a {
   color: var(--white);
 }
 .lightMode{ 
-  background: var(--deep-fir-green);
+  background: var(--white);
   background-image: url("/images/bg-pattern.svg");
-  color: var(--white);
+  color: var(--deep-fir-green);
   z-index: 0;
 }
 .lightMode a {

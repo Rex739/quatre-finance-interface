@@ -29,7 +29,11 @@ const MobileNavList = ({ isClicked, handleClick, lightMode, handleAlert, sound, 
                     {/* <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
                         <img src="images/farm.svg" alt="farm" width={40} height={40} className="me-2" /> Farm
                     </ActiveLink> */}
-                    <ActiveLink href="/development" handleClick={handleClick} handleAlert={handleAlert}>
+                    <ActiveLink
+                        href="https://app.quatre.finance"
+                        target="_blank"
+                        rel="noreferrer"
+                        handleClick={handleClick}>
                         <img src={lightMode ? "images/navbar/app.svg" : "images/navbar/app-dark.svg"} alt="app" width={40} height={40} className="me-2" /> App
                     </ActiveLink>
                     <ActiveLink href="https://github.com/Quatre-Finance/Q-paper/blob/main/TEAM.md" handleClick={handleClick}>

@@ -25,7 +25,7 @@ const DesktopNav = ({ lightMode, toggleMode, sound }) => {
                         </Link>
                     </li>
                     <li className="my-auto">
-                        <Link href="/development">
+                        <Link href="https://app.quatre.finance/">
                             <a>
                                 <img src={lightMode ? "images/navbar/app.svg" : "images/navbar/app-dark.svg" } alt="app" width={32} height={20} className="mr-1" /> App
                             </a>
@@ -38,13 +38,6 @@ const DesktopNav = ({ lightMode, toggleMode, sound }) => {
                             </a>
                         </Link>
                     </li>
-                    {/* <li className="my-auto">
-                        <Link href="/#footer">
-                            <a>
-                                <img src={lightMode ? "images/navbar/contact.svg" : "images/navbar/contact-dark.svg"} alt="contact" width={32} height={20} className="mr-1" /> Contact
-                            </a>
-                        </Link>
-                    </li> */}
                     <li className="my-auto">
                         <Link href="https://github.com/Quatre-Finance" >
                             <a target="_newtab">

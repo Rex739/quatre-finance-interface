@@ -9,21 +9,22 @@ const AppServices1 = ({ lightMode }) => {
                 </figcaption>
                 <section>
                     <article>
-                        <h1>Peer Lending & Borrowing</h1>
+                        <h1>Peer-Funding, Lending & Borrowing</h1>
                         <p>
-                            Enjoy the super <b>FOUR</b> benefits of lending and borrowing asset,
-                            via a peer to peer structure, staking and participating in Quatrefinance ecosystem.
+                            Enjoy the super benefits of lending and borrowing asset,
+                            via a decentralized peer to peer structure, staking and participating in Quatrefinance ecosystem. <strong className={styles.strong}>Digesu<span className={styles.new}><i>New</i></span></strong>
                         </p>
-                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_core/Q_core.md#quatre-four-q-core" target="_newtab">Learn More</a></button>
+                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_core/QuatreDigesu.md" target="_newtab">Learn More</a></button>
                     </article>
                     <article>
-                        <h1>Single Lending & Borrowing</h1>
+                        <h1>You-ni-Fi</h1>
                         <p>
                             Do you want to be able to sell crypto to anyone and at the same time
                             desire utmost control over your funds and set parameters as your wish?
-                            If your answer is other than &quot;No&quot;, then this category best fits your need.
+                            If your answer is &quot;Yes&quot;, then this category best fits your need.
+                            Sometimes, you need to do things your way.
                         </p>
-                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_lend/QLend.md#quatre-landb-q-landb" target="_newtab">Learn More</a></button>
+                        <button className="app-btn"><a href="https://github.com/Quatre-Finance/Q-paper/blob/main/q_p2p/Q_p2p.md" target="_newtab">Learn More</a></button>
                     </article>
                 </section>
             </div>

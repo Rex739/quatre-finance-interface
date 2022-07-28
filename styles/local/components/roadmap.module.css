@@ -149,3 +149,14 @@
     color: var(--dark-grey);
     transition: 0.2s ease-in-out;
 }
+
+.roadMapFixing {
+    /* border: 2px solid var(--dark-grey); */
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background: var(--dark-mode2);
+    color: var(--white);
+}

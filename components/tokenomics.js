@@ -9,9 +9,7 @@ const Tokenomics = ({ lightMode, handleAlert }) => {
                    <img src="images/tokenomics/tokenomics.svg" alt="tokenomics" />   
                </figure>
             </div>
-            <Whitepaper 
-                lightMode = {lightMode}    
-            />
+            <Whitepaper lightMode={lightMode} />
         </section>
     );
 }

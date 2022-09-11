@@ -55,13 +55,13 @@ const RoadMap = ({ lightMode }, props) => {
     return (
         <section className={lightMode ? [styles.lightMode, styles.sectionContainer].join(" ") : [styles.darkMode, styles.sectionContainer].join(" ")}>
             <div className={["navigation-wrapper wrapper ", styles.sectionContent].join(" ")}>
-                {/* <h2>History Timeline</h2> */}
+                {/* <h2>History Timeline</h2>
                 <h1>Development Roadmap</h1>
                 <div className={styles.roadMapFixing}>
                     <marquee behavior='alternate' > We are making some changes. Will be back shortly. </marquee>
-                </div>
+                </div> */}
                 <figure>
-                    {/* <img src="images/roadmap/roadmap.svg" alt="roadmap" /> */}
+                    <img src="images/roadmap/roadmap.svg" alt="roadmap" />
                 </figure>
             </div>
         </section>

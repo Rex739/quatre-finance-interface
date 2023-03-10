@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import './animate.css';
+
+@font-face {
+	font-family: 'century-gothic';
+	src: url("../fonts/GOTHIC.TTF");
+}
+@font-face {
+	font-family: 'century-gothic-bold';
+	src: url("../fonts/GOTHICB0.TTF");
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* button{
+	transition: all 0.3s ease-in-out;
+}
+* button:hover{
+	transition: all 0.3s ease-in-out;
+}
+
+
+@media all and (min-width: 0px) {
+	.wrapper {
+		width: 91.46667%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.connect-raduis {
+		border-radius: 45%
+	}
+}
+
+@media all and (min-width: 1024px) {
+	.wrapper {
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+
+@media all and (min-width: 1280px) {
+	.wrapper {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+@media all and (min-width: 1440px) {
+	.wrapper {
+		width: 1310px;
+		margin: 0 auto;
+	}
+}

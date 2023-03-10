@@ -24,7 +24,7 @@ module.exports = {
       neutral: colors.neutral,
       stone: colors.stone,
       red: colors.red,
-      orange: colors.orange,
+      orange: "#F87C00", // custom orange
       amber: colors.amber,
       yellow: colors.yellow,
       lime: colors.lime,
@@ -40,8 +40,10 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      discord: "#738ADB",
-      twitter: "#1DA1F2",
+      white1: "#F9F4F4", //custom white
+      green1: "#121212", // background green
+      gray1: "#2E3231" // custom grey
+       
     }),
     columns: {
       auto: "auto",

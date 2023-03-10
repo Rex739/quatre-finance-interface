@@ -20,39 +20,33 @@ const DesktopNav = ({ lightMode, toggleMode, sound }) => {
                     <li className="my-auto ms-auto">
                         <Link href="/">
                             <a>
-                                <img src={lightMode ? "images/navbar/home.svg" : "images/navbar/home-dark.svg"} alt="home" width={32} height={20} className="mr-1" /> Home
+                                 Home
                             </a>
                         </Link>
                     </li>
                     <li className="my-auto">
                         <Link href="https://app.quatre.finance/" rel="noreferrer" target="_blank">
                             <a>
-                                <img src={lightMode ? "images/navbar/app.svg" : "images/navbar/app-dark.svg" } alt="app" width={32} height={20} className="mr-1" /> App
+                               Learn
                             </a>
                         </Link>
                     </li>
                     <li className="my-auto">
                         <Link href="https://github.com/Quatre-Finance/Q-paper/blob/main/TEAM.md">
                             <a target="_newtab">
-                                <img src={lightMode ? "images/navbar/team.svg" : "images/navbar/team-dark.svg"} alt="team" width={32} height={20} className="mr-1" /> Team
+                                Community
                             </a>
                         </Link>
                     </li>
+
                     <li className="my-auto">
-                        <Link href="https://github.com/Quatre-Finance" >
+                        <Link href="#app" >
                             <a target="_newtab">
-                                <img src={lightMode ? "images/navbar/github.svg" : "images/navbar/github-dark.svg"} alt="github" width={32} height={20} className="mr-1" /> Github
+                                 
                             </a>
                         </Link>
                     </li>
-                    <li className="my-auto">
-                        <Link href="https://medium.com/@QuatreFinance" >
-                            <a target="_newtab">
-                                <img src={lightMode ? "images/navbar/docs.svg" : "images/navbar/docs-dark.svg"} alt="docs" width={32} height={20} className="mr-1" /> Docs
-                            </a>
-                        </Link>
-                    </li>
-                    <i onClick={switchMode} className={lightMode ? "bi bi-sun-fill sun-icon  my-auto px-2" : "bi bi-moon-fill moon-icon my-auto px-2"}></i>
+                    {/* <i onClick={switchMode} className={lightMode ? "bi bi-sun-fill sun-icon  my-auto px-2" : "bi bi-moon-fill moon-icon my-auto px-2"}></i> */}
                 </ul>
             </nav>
         </div>

@@ -1,4 +1,4 @@
-import ActiveLink from "../activeLink";
+import ActiveLink from "../../activeLink";
 
 const NavList = ({ isClicked, handleClick }) => {
   return (

@@ -1,10 +1,7 @@
 import '../styles/globals.css'
-import Layout from '../components/layout'
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import Layout from '../components/layout/layout'
 import { useEffect, useState } from 'react'
 import ScaleLoader from "react-spinners/ScaleLoader";
-import { css } from "@emotion/react";
 
 const MyApp = ({ Component, pageProps }) => {
 

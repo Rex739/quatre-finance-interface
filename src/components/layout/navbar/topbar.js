@@ -22,27 +22,24 @@ const TopBar = ({ isClicked, handleClick }) => {
               className={isClicked ? "hidden" : "my-auto"}
               onClick={handleClick}
             >
-              <FontAwesomeIcon
-                // @ts-ignore
-                icon={faBars}
-                // @ts-ignore
-                size="2xl"
-                className="text-3xl w-6 pt-2 font-extralight text-white"
-              />
+              <img src="images/navbar/bar.svg" alt="menu" width={50} />
             </div>
           </li>
           <div className="hidden lg:flex">
             <ActiveLink
+              className="mx-[36.5px]"
               href="/"
               handleClick={handleClick}
               children={"Home"}
             ></ActiveLink>
             <ActiveLink
+              className="mx-[36.5px]"
               href="/#learn"
               handleClick={handleClick}
               children={"Learn"}
             ></ActiveLink>
             <ActiveLink
+              className="mx-[36.5px]"
               href="/#community"
               handleClick={handleClick}
               children={"Commuinity"}

@@ -1,11 +1,11 @@
 import { useRouter } from "next/router"
 import React from "react"
 
-const ActiveLink = ({ handleClick, children, href }) => {
+const ActiveLink = ({ handleClick, children, href, className }) => {
   const router = useRouter()
   const listStyle = {
-    marginRight: 36.5,
-    marginLeft: 36.5,
+    // marginRight: 36.5,
+    // marginLeft: 36.5,
   }
 
   const linkStyle = {
@@ -18,7 +18,7 @@ const ActiveLink = ({ handleClick, children, href }) => {
   }
 
   return (
-    <li onClick={handleClick} style={listStyle}>
+    <li onClick={handleClick} style={listStyle} className={className}>
       <a
         href={href}
         onClick={handleActiveClick}

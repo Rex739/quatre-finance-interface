@@ -1,50 +1,79 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTimes } from "@fortawesome/free-solid-svg-icons"
+import Link from "next/link"
+import React from "react"
+import ActiveLink from "./activeLink"
 
 const NavList = ({ isClicked, handleClick }) => {
   return (
-    <section className="relative bg-[#0E4236] z-30">
-      <nav className={isClicked ? "w-8/12 bg-[#0E4236]/50 backdrop-blur-[16px] backdrop-saturate-[180%] text-white fixed h-screen top-0 left-0 pl-5" : "invisible"}>
-        <ul className={isClicked ? "flex flex-col text-[12px]" : "hidden"}>
-          <li className="flex justify-start relative pt-7 mb-16">
+    <section className="relative bg-[#0E4236] z-30 font-inter text-[32px]">
+      <nav
+        className={
+          isClicked
+            ? "w-full bg-green1/50 backdrop-blur-[16px] backdrop-saturate-[180%] text-white fixed h-screen top-0 left-0 pl-5"
+            : "invisible"
+        }
+      >
+        <ul
+          className={isClicked ? "flex flex-col items-start h-full" : "hidden"}
+        >
+          <li className="flex relative py-7 mb-16">
             <div className={isClicked ? "" : "hidden"} onClick={handleClick}>
-              <FontAwesomeIcon icon={faTimes} className="text-xl w-5 font-extralight" />
+              <img src="images/navbar/close.svg" alt="" width={30} />
+
             </div>
           </li>
-          <ul
-            className={[
-              "flex flex-col mb-32 justify-center xl:justify-end  font-gothic-bold",
-            ].join(" ")}
-          >
-            <li onClick={handleClick} className="mb-5">
-              <Link href="/">Home</Link>
-            </li>
-            <li onClick={handleClick} className="mb-5">
-              <Link href="#about">About</Link>
-            </li>
-            <li onClick={handleClick} className="mb-5">
-              <Link href="#minting">Minting</Link>
-            </li>
-            <li onClick={handleClick} className="mb-5">
-              <Link href="#gallery">Gallery</Link>
-            </li>
-            <li onClick={handleClick} className="mb-5">
-              <Link href="#roadmap">Roadmap</Link>
-            </li>
-            <li onClick={handleClick} className="mb-5">
-              <Link href="#faq">FAQ</Link>
-            </li>
-            <li onClick={handleClick} className="mb-5">
-              <Link href="#team">Team</Link>
-            </li>
-            <li onClick={handleClick} className="mb-5">
-              <a href="https://discord.gg/7mAtAbEzqE" target="_blank" rel="noreferrer ">Lore</a>
-            </li>
+
+          <ul className={["flex flex-col h-full"].join(" ")}>
+            <div>
+              <ActiveLink
+                className="mb-5"
+                href="/"
+                handleClick={handleClick}
+                children={"Home"}
+              ></ActiveLink>
+              <ActiveLink
+                className="mb-5"
+                href="/#learn"
+                handleClick={handleClick}
+                children={"Learn"}
+              ></ActiveLink>
+              <ActiveLink
+                className=""
+                href="/#community"
+                handleClick={handleClick}
+                children={"Commuinity"}
+              ></ActiveLink>
+            </div>
+            <div className="mt-auto mb-24">
+              <ul className="flex">
+                <li className="mr-3">
+                  <img
+                    src="images/socials/telegram.svg"
+                    alt="telegram"
+                    width={45}
+                  />
+                </li>
+                <li className="mr-3">
+                  <img
+                    src="images/socials/twitter.svg"
+                    alt="twitter"
+                    width={45}
+                  />
+                </li>
+                <li className="">
+                  <img
+                    src="images/socials/discord.svg"
+                    alt="discord"
+                    width={45}
+                  />
+                </li>
+              </ul>
+            </div>
           </ul>
         </ul>
       </nav>
     </section>
-  );
-};
-export default NavList;
+  )
+}
+export default NavList

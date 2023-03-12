@@ -2,58 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
-@import './animate.css';
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import "./animate.css";
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-* button{
-	transition: all 0.3s ease-in-out;
+* button {
+  transition: all 0.3s ease-in-out;
 }
-* button:hover{
-	transition: all 0.3s ease-in-out;
+* button:hover {
+  transition: all 0.3s ease-in-out;
 }
-
 
 @media all and (min-width: 0px) {
-	.wrapper {
-		width: 91.46667%;
-		margin: 0 auto;
-		overflow: hidden;
-	}
+  .wrapper {
+    width: 91.46667%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 
-	.connect-raduis {
-		border-radius: 45%
-	}
+  .connect-raduis {
+    border-radius: 45%;
+  }
 }
 
 @media all and (min-width: 1024px) {
-	.wrapper {
-		width: 85%;
-		margin: 0 auto;
-	}
+  .wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
 
 @media all and (min-width: 1280px) {
-	.wrapper {
-		width: 70%;
-		margin: 0 auto;
-	}
+  .wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 @media all and (min-width: 1440px) {
-	.wrapper {
-		width: 1310px;
-		margin: 0 auto;
-	}
+  .wrapper {
+    width: 1310px;
+    margin: 0 auto;
+  }
 }

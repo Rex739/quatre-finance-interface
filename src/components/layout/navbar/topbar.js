@@ -16,7 +16,22 @@ const TopBar = ({ isClicked, handleClick }) => {
               </a>
             </Link>
           </li>
-          <div className="flex">
+          <li className="lg:hidden relative">
+            {/* hamburger button */}
+            <div
+              className={isClicked ? "hidden" : "my-auto"}
+              onClick={handleClick}
+            >
+              <FontAwesomeIcon
+                // @ts-ignore
+                icon={faBars}
+                // @ts-ignore
+                size="2xl"
+                className="text-3xl w-6 pt-2 font-extralight text-white"
+              />
+            </div>
+          </li>
+          <div className="hidden lg:flex">
             <ActiveLink
               href="/"
               handleClick={handleClick}
@@ -33,7 +48,7 @@ const TopBar = ({ isClicked, handleClick }) => {
               children={"Commuinity"}
             ></ActiveLink>
           </div>
-          <li>
+          <li className="hidden lg:flex">
             <a href="">
               <button className="bg-orange w-[174px] h-[60px] rounded-lg text-white1">
                 Go To App

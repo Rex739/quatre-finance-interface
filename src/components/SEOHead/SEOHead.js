@@ -1,4 +1,5 @@
 import NextHead from 'next/head'
+import React from 'react'
 
 const SEOHead = ({
   title,
@@ -7,8 +8,8 @@ const SEOHead = ({
   ogImage
 }) => {
   const joinedTitle = title
-    ? `${title} | Kingdom Of Pandaria NFT`
-    : "Kingdom Of Pandaria NFT - World's first ever story-based anime NFT project."
+    ? `${title} | Quatre Finance`
+    : "Quatre Finance - Enjoy Decentralised Protocols built on the blockchain"
 
   return (
     <NextHead>
@@ -23,16 +24,16 @@ const SEOHead = ({
       />
       <meta
         name="keywords"
-        content="NFT, Collection, Kingdom, Web3, Panda"
+        content="Defi, Protocol Web3"
       />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={joinedTitle} />
       <meta property="og:description" content={description} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@kopandaria" />
-      <meta name="twitter:site" content="@kopandaria" />
-      <meta name="twitter:image" content={ogImage} />
-      <meta name="twitter:image:alt" content={description} />
+      {/* <meta name="twitter:card" content="summary_large_image" /> */}
+      {/* <meta name="twitter:creator" content="@kopandaria" /> */}
+      {/* <meta name="twitter:site" content="@kopandaria" /> */}
+      {/* <meta name="twitter:image" content={ogImage} /> */}
+      {/* <meta name="twitter:image:alt" content={description} /> */}
       <meta name="twitter:description" content={description} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
@@ -46,8 +47,8 @@ const SEOHead = ({
 
 SEOHead.defaultProps = {
   title: '',
-  description: "Kingdom Of Pandaria NFT - World's first ever story-based anime NFT project.",
-  url: 'https://kingdomofpandaria.com/',
+  description: "Quatre Finance - World's first ever story-based anime NFT project.",
+  // url: 'https://kingdomofpandaria.com/',
   ogImage:
     'images/gallery/1.png'
 }

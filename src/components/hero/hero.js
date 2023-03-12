@@ -3,7 +3,7 @@ import React from "react"
 import styles from "./hero.module.css"
 const Hero = () => {
   return (
-    <section className="relative font-inter">
+    <section className="relative font-inter mb-10">
       <div className="absolute flex z-0 justify-between w-full top-[-5rem]">
         <img
           src="images/hero/hero-bg1.png"
@@ -17,7 +17,7 @@ const Hero = () => {
         />
       </div>
       <div className="wrapper py-16 lg:pt-32 text-white flex flex-col justify-center relative z-10">
-        <header className="lg:w-10/12 mx-auto 1xl:w-full">
+        <header className="lg:w-10/12 mx-auto xl:w-11/12 1xl:w-full 2xl:w-11/12">
           <h1
             className={[
               "font-nova-square text-[40px] md:text-[60px] lg:text-[60px] xl:text-[80px] 1xl:text-[100px] 2xl:text-[120px] text-center",

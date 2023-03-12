@@ -35,7 +35,7 @@ const TopBar = ({ isClicked, handleClick }) => {
           </div>
           <li>
             <a href="">
-              <button className="bg-orange w-[174px] h-[60px] rounded-lg text-white">
+              <button className="bg-orange w-[174px] h-[60px] rounded-lg text-white1">
                 Go To App
               </button>
             </a>

@@ -27,10 +27,10 @@ const ScrollButton = ({ windowIsDefined }) => {
       onClick={scrollToTop}
       style={{ display: visible ? "flex" : "none" }}
       className={
-        "fixed z-50 bottom-12 right-1 xl:right-5 1xl:right-10 rounded-lg bg-[#25B15F] h-10 w-10 xl:h-[53px] xl:w-[52px] justify-center items-center"
+        "fixed z-50 bottom-12 right-1 xl:right-5 1xl:right-10  h-10 w-10 xl:h-[53px] xl:w-[52px]"
       }
     >
-      <img src="images/faq/arrow-up.svg" alt="global lanthern" />
+      <img src="images/scrollDown.svg" alt="global lanthern" className="rotate-180"/>
     </button>
   );
 };

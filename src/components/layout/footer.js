@@ -7,11 +7,12 @@ import {
   faReddit,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 
 const Footer = () => {
   return (
     <footer className="bg-[#0B2520] py-12">
-      <section className="wrapper">
+      {/* <section className="wrapper">
         <h1 className="text-[32px] font-bold text-white">
           Kingdom of <span className="text-[#25B15F]">Pandaria</span>
         </h1>
@@ -86,7 +87,7 @@ const Footer = () => {
             />
           </a>
         </div>
-      </section>
+      </section> */}
     </footer>
   );
 };

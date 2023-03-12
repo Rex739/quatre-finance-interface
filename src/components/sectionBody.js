@@ -6,12 +6,16 @@ const SectionBody = ({
   paragraph1,
   paragraph2,
   flexRow,
-  flexRowReverse
+  flexRowReverse,
 }) => {
   return (
     <div
-      className={[ flexRow, "flex flex-col mt-10 items-center w-full",  flexRowReverse].join(" "
-      )}
+      className={[
+        "flex flex-col mt-10 items-center w-full",
+        flexRow,
+        flexRowReverse,
+      
+      ].join(" ")}
     >
       <img
         src={sectionImage}

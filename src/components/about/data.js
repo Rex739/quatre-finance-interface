@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export const aboutData = [
   {
@@ -19,6 +19,8 @@ export const aboutData = [
       </p>
     ),
     sectionImage: "images/frame1.svg",
-    sectionName: "About us"
-  }
+    sectionName: "About us",
+    flexRow: "lg:flex-row",
+    flexRowReverse: "lg:flex-row-reverse",
+  },
 ]

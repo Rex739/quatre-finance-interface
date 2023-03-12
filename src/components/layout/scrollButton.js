@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 const ScrollButton = ({ windowIsDefined }) => {
   const [visible, setVisible] = useState(false);

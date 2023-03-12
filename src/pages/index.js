@@ -1,6 +1,7 @@
 import React from "react"
 import About from "../components/about/about"
 import Hero from "../components/hero/hero"
+import Solutions from "../components/solutions/solutions"
 // import SEOHead from "../components/SEOHead/SEOHead"
 import TransparenLayer from "../components/transparentLayer"
 
@@ -12,6 +13,7 @@ const Home = ({ isClicked }) => {
         <TransparenLayer isClicked={isClicked} />
         <Hero />
         <About />
+        <Solutions />
       </main>
     </>
   )

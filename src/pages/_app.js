@@ -1,14 +1,14 @@
-import "../styles/globals.css";
-import Layout from "../../components/layout/layout";
-import { useState } from "react";
-import SEOHead from "../components/SEOHead/SEOHead";
+import "../styles/globals.css"
+import Layout from "../components/layout/layout"
+import { useState } from "react"
+import SEOHead from "../components/SEOHead/SEOHead"
 
 const MyApp = ({ Component, pageProps }) => {
-  const [isClicked, setClicked] = useState(false);
+  const [isClicked, setClicked] = useState(false)
 
   const handleClick = () => {
-    setClicked(!isClicked);
-  };
+    setClicked(!isClicked)
+  }
   return (
     <>
       <SEOHead />
@@ -22,7 +22,7 @@ const MyApp = ({ Component, pageProps }) => {
         </Layout>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default MyApp;
+export default MyApp

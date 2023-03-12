@@ -42,8 +42,7 @@ module.exports = {
       rose: colors.rose,
       white1: "#F9F4F4", //custom white
       green1: "#121212", // background green
-      gray1: "#2E3231" // custom grey
-       
+      gray1: "#2E3231", // custom grey
     }),
     columns: {
       auto: "auto",
@@ -353,9 +352,8 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
-      roboto: ["Roboto", "san-serif"],
-      gothic: ["century-gothic", "sans-serif"],
-      "gothic-bold": ["century-gothic-bold", "sans-serif"],
+      "nova-square": ["Nova Square", " cursive"],
+      inter: ["Inter", "sans-serif"],
       sans: [
         "ui-sans-serif",
         "system-ui",
@@ -969,4 +967,4 @@ module.exports = {
     "disabled",
   ],
   plugins: [],
-};
+}

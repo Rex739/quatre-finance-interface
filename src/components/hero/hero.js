@@ -17,10 +17,10 @@ const Hero = () => {
         />
       </div>
       <div className="wrapper py-16 lg:pt-32 text-white flex flex-col justify-center relative z-10">
-        <header className="lg:w-10/12 1xl:w-full">
+        <header className="lg:w-10/12 mx-auto 1xl:w-full">
           <h1
             className={[
-              "font-nova-square text-[32px] md:text-[60px] lg:text-[60px] xl:text-[80px] 1xl:text-[100px] 2xl:text-[120px] text-center",
+              "font-nova-square text-[40px] md:text-[60px] lg:text-[60px] xl:text-[80px] 1xl:text-[100px] 2xl:text-[120px] text-center",
               "tracking-[-0.06em] md:leading-[5rem] xl:leading-[6rem] 1xl:leading-[8rem]",
             ].join(" ")}
           >
@@ -29,7 +29,7 @@ const Hero = () => {
             Blockchain
           </h1>
         </header>
-        <p className="text-lg lg:text-2xl text-center mx-auto my-6 lg:my-10 md:w-9/12 xl:w-8/12 1xl:w-7/12">
+        <p className="text-xl  lg:text-2xl text-center mx-auto my-8 mb-10 lg:my-10 md:w-9/12 xl:w-8/12 1xl:w-7/12">
           We consistently build decentralized protocols, in a trustless
           environments that manage both financial and non-financial
           relationships between parties.
@@ -68,7 +68,7 @@ const Hero = () => {
               alt="scroll down"
               className="w-[30px]"
             />
-            <span className="text-base">Scroll down</span>
+            <span className="text-base mt-1">Scroll down</span>
           </a>
         </div>
       </div>

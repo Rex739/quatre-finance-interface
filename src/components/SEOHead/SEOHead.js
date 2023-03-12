@@ -9,7 +9,7 @@ const SEOHead = ({
 }) => {
   const joinedTitle = title
     ? `${title} | Quatre Finance`
-    : "Quatre Finance - Enjoy Decentralised Protocols built on the blockchain"
+    : "Quatre Finance "
 
   return (
     <NextHead>

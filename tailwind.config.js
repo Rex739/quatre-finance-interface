@@ -4,13 +4,14 @@ module.exports = {
   darkMode: "media", // or 'class'
   theme: {
     screens: {
+      xss: "320px",
       xs: "412px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
       "1xl": "1440px",
-      "2xl": "1536px",
+      "2xl": "1500px",
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
@@ -352,7 +353,7 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
-      "nova-square": ["Nova Square", " cursive"],
+      "nova-square": ["nova-square", "sans-sarif"],
       inter: ["Inter", "sans-serif"],
       sans: [
         "ui-sans-serif",

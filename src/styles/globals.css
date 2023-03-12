@@ -3,17 +3,23 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"); */
+
 @import "./animate.css";
 
-html {
-  scroll-behavior: smooth;
+@font-face {
+  font-family: "nova-square";
+  src: url("../fonts/NOVASQUARE.TTF");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 * button {
@@ -25,7 +31,7 @@ html {
 
 @media all and (min-width: 0px) {
   .wrapper {
-    width: 91.46667%;
+    width: 91.5%;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -37,19 +43,11 @@ html {
 
 @media all and (min-width: 1024px) {
   .wrapper {
-    width: 85%;
-    margin: 0 auto;
+    width: 91.5%;
   }
 }
 
-@media all and (min-width: 1280px) {
-  .wrapper {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-
-@media all and (min-width: 1440px) {
+@media all and (min-width: 2000px) {
   .wrapper {
     width: 1310px;
     margin: 0 auto;

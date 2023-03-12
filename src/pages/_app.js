@@ -2,6 +2,7 @@ import "../styles/globals.css"
 import Layout from "../components/layout/layout"
 import { useState } from "react"
 import SEOHead from "../components/SEOHead/SEOHead"
+import React from "react"
 
 const MyApp = ({ Component, pageProps }) => {
   const [isClicked, setClicked] = useState(false)

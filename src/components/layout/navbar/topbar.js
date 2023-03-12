@@ -6,17 +6,21 @@ import React from "react"
 
 const TopBar = ({ isClicked, handleClick }) => {
   return (
-    <header className="bg-green1 py-5 lg:py-10 font-inter">
+    <header className="bg-green1 py-5 lg:py-10 font-inter ">
       <nav className="wrapper">
         <ul className="flex items-center justify-between">
           <li>
             <Link href="/">
               <a>
-                <img src="/images/navbar/logo.svg" alt="Logo" />
+                <img
+                  src="/images/navbar/logo.svg"
+                  alt="Logo"
+                  className="w-[80px] lg:w-[142px]"
+                />
               </a>
             </Link>
           </li>
-          <li className="lg:hidden relative">
+          <li className="lg:hidden relative relative z-10">
             {/* hamburger button */}
             <div
               className={isClicked ? "hidden" : "my-auto"}

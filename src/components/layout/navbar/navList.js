@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTimes } from "@fortawesome/free-solid-svg-icons"
-import Link from "next/link"
 import React from "react"
 import ActiveLink from "./activeLink"
 

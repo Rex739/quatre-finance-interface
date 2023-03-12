@@ -19,11 +19,10 @@ const NavList = ({ isClicked, handleClick }) => {
         >
           <li className="flex relative py-7 mb-16">
             <div className={isClicked ? "" : "hidden"} onClick={handleClick}>
-              <img src="images/navbar/close.svg" alt="" width={30} />
-
+              <img src="images/navbar/close.svg" alt="close menu" width={30} />
             </div>
           </li>
-
+          {/* nav list */}
           <ul className={["flex flex-col h-full"].join(" ")}>
             <div>
               <ActiveLink
@@ -45,28 +44,36 @@ const NavList = ({ isClicked, handleClick }) => {
                 children={"Commuinity"}
               ></ActiveLink>
             </div>
+
+            {/* social media icon */}
             <div className="mt-auto mb-24">
               <ul className="flex">
                 <li className="mr-3">
-                  <img
-                    src="images/socials/telegram.svg"
-                    alt="telegram"
-                    width={45}
-                  />
+                  <a href="#123" target="_blank" rel="noreferrer">
+                    <img
+                      src="images/socials/telegram.svg"
+                      alt="telegram"
+                      width={45}
+                    />
+                  </a>
                 </li>
                 <li className="mr-3">
-                  <img
-                    src="images/socials/twitter.svg"
-                    alt="twitter"
-                    width={45}
-                  />
+                  <a href="#123" target="_blank" rel="noreferrer">
+                    <img
+                      src="images/socials/twitter.svg"
+                      alt="twitter"
+                      width={45}
+                    />
+                  </a>
                 </li>
                 <li className="">
-                  <img
-                    src="images/socials/discord.svg"
-                    alt="discord"
-                    width={45}
-                  />
+                  <a href="#123" target="_blank" rel="noreferrer">
+                    <img
+                      src="images/socials/discord.svg"
+                      alt="discord"
+                      width={45}
+                    />
+                  </a>
                 </li>
               </ul>
             </div>

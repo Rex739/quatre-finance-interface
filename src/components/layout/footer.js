@@ -60,7 +60,7 @@ const Footer = () => {
           <li className="text-lg mb-[8px]">
             <Link href="/">
               <a>About Us</a>
-            </Link>{" "}
+            </Link>
           </li>
           <li className="text-lg">
             <Link href="/">

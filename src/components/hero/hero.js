@@ -62,7 +62,7 @@ const Hero = () => {
           </a>
         </div>
         <div className="mx-auto mt-10">
-          <a href="/" className="flex flex-col items-center">
+          <a href="/#about" className="flex flex-col items-center">
             <img
               src="images/scrollDown.svg"
               alt="scroll down"

@@ -5,7 +5,12 @@ import Cards from "./cards"
 import { problemsData } from "./data"
 const Problems = () => {
   return (
-    <section className="wrapper font-inter text-lg lg:text-xl text-white1 text-left lg:text-center">
+    <section
+      className={[
+        "wrapper font-inter text-lg lg:text-xl text-white1 text-left lg:text-center",
+        "py-10 lg:py-20",
+      ].join(" ")}
+    >
       {problemsData.map((data) => (
         <div key={data.key}>
           <SectionHeader

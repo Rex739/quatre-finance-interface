@@ -13,7 +13,7 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray1 py-12 text-white">
+    <footer className="bg-gray1 py-12 text-white font-inter">
       <div className="wrapper flex flex-col lg:flex-row justify-between">
         <ul className="mb-[40px]">
           <li>
@@ -22,7 +22,7 @@ const Footer = () => {
             </h1>
           </li>
           <Socials />
-          <li className="mt-[16px] lg:mt-[24px]">
+          <li className="mt-[16px] lg:mt-[24px] text-lg">
             {" "}
             <a
               href="mailto:officialemail@gmail.com"
@@ -39,12 +39,12 @@ const Footer = () => {
               WHAT WE DO
             </h1>{" "}
           </li>
-          <li>
+          <li className="text-lg">
             <Link href="/">
               <a>Learn</a>
             </Link>{" "}
           </li>
-          <li>
+          <li className="text-lg">
             <Link href="/">
               <a>Community</a>
             </Link>{" "}
@@ -57,19 +57,19 @@ const Footer = () => {
               COMPANY
             </h1>{" "}
           </li>
-          <li>
+          <li className="text-lg">
             <Link href="/">
               <a>About Us</a>
             </Link>{" "}
           </li>
-          <li>
+          <li className="text-lg">
             <Link href="/">
               <a>Privacy Policy</a>
             </Link>{" "}
           </li>
         </ul>
       </div>
-      <div className="wrapper">
+      <div className="wrapper text-lg">
         &copy;2023 QuatreFinance. All rights reserved.
       </div>
     </footer>

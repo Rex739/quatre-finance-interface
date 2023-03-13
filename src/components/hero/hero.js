@@ -61,14 +61,14 @@ const Hero = () => {
             </button>
           </a>
         </div>
-        <div className="mx-auto">
+        <div className="mx-auto mt-10">
           <a href="/" className="flex flex-col items-center">
             <img
               src="images/scrollDown.svg"
               alt="scroll down"
               className="w-[30px]"
             />
-            <span className="text-base mt-1">Scroll down</span>
+            <span className="text-base mt-2">Scroll down</span>
           </a>
         </div>
       </div>

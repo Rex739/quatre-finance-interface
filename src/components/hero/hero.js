@@ -21,7 +21,7 @@ const Hero = () => {
           <h1
             className={[
               "font-nova-square text-[40px] md:text-[60px] lg:text-[60px] xl:text-[80px] 1xl:text-[100px] 2xl:text-[120px] text-center",
-              "tracking-[-0.06em] md:leading-[5rem] xl:leading-[6rem] 1xl:leading-[8rem]",
+              "tracking-[-0.095em] md:leading-[5rem] xl:leading-[6rem] 1xl:leading-[8rem]",
             ].join(" ")}
           >
             Enjoy <span className={styles.gradient}>Decentralised</span>{" "}

@@ -11,7 +11,7 @@ const PlayStore = () => {
         />{" "}
       </div>
       <div className="relative z-10 wrapper flex flex-col text-center py-[50px] lg:py-[76px] lg:justify-center">
-        <h1 className="font-nova-square text-[32px] lg:text-5xl xl:text-6xl mb-2 lg:mb-[37px]">
+        <h1 className="font-nova-square text-[32px] lg:text-5xl xl:text-6xl mb-2 lg:mb-[37px] tracking-[-0.095em]">
           Experience The Power of Decentralisation
         </h1>
         <div className="mx-auto">

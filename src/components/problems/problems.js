@@ -1,17 +1,22 @@
-import React from "react";
+import React from "react"
 import SectionHeader from "../sectionHeader"
-
-const Problem = () => {
-  return ( 
-    <section>
-      <SectionHeader 
-        sectionTitle={data.sectionTitle}
-        subTitle={data.subTitle}
-
-      />
-
+import Cards from "./cards"
+// @ts-ignore
+import { problemsData } from "./data"
+const Problems = () => {
+  return (
+    <section className="wrapper font-inter text-lg lg:text-xl text-white1 text-left lg:text-center">
+      {problemsData.map((data) => (
+        <div key={data.key}>
+          <SectionHeader
+            sectionTitle={data.sectionTitle}
+            subTitle={data.subTitle}
+          />
+        </div>
+      ))}
+      <Cards />
     </section>
-   );
+  )
 }
- 
-export default Problem;
+
+export default Problems

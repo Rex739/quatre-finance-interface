@@ -13,7 +13,7 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray1 py-12 text-white font-inter">
+    <footer className="bg-gray1 py-12 lg:py-[6rem] text-white font-inter">
       <div className="wrapper flex flex-col lg:flex-row justify-between">
         <ul className="mb-[40px]">
           <li>
@@ -22,7 +22,7 @@ const Footer = () => {
             </h1>
           </li>
           <Socials />
-          <li className="mt-[16px] lg:mt-[24px] text-lg">
+          <li className="mt-[16px] lg:mt-[24px] text-lg lg:text-xl">
             {" "}
             <a
               href="mailto:officialemail@gmail.com"
@@ -33,13 +33,13 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <ul className="mb-[40px]">
+        <ul className="mb-[40px] lg:mr-[12rem]">
           <li>
             <h1 className="text-2xl font-bold mb-[16px] lg:mb-[24px] ">
               WHAT WE DO
             </h1>{" "}
           </li>
-          <li className="text-lg">
+          <li className="text-lg mb-[8px]">
             <Link href="/">
               <a>Learn</a>
             </Link>{" "}
@@ -57,7 +57,7 @@ const Footer = () => {
               COMPANY
             </h1>{" "}
           </li>
-          <li className="text-lg">
+          <li className="text-lg mb-[8px]">
             <Link href="/">
               <a>About Us</a>
             </Link>{" "}
@@ -69,7 +69,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="wrapper text-lg">
+      <div className="wrapper text-lg lg:text-center lg:pt-[148px]">
         &copy;2023 QuatreFinance. All rights reserved.
       </div>
     </footer>

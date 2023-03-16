@@ -1,5 +1,6 @@
 import TopBar from "./topbar";
 import NavList from "./navList";
+import React from "react";
 
 const NavBar = ({ handleClick, isClicked }) => {
   return (

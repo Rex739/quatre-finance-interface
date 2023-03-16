@@ -29,7 +29,7 @@ const TopBar = ({ isClicked, handleClick }) => {
               <img src="images/navbar/bar.svg" alt="menu" width={50} />
             </div>
           </li>
-          <div className="hidden lg:flex">
+          <div className="hidden lg:flex font-medium">
             <ActiveLink
               className="mx-[36.5px]"
               href="/"
@@ -51,7 +51,7 @@ const TopBar = ({ isClicked, handleClick }) => {
           </div>
           <li className="hidden lg:flex">
             <a href="">
-              <button className="bg-orange w-[174px] h-[60px] rounded-lg text-white1">
+              <button className="font-bold bg-orange w-[174px] h-[60px] rounded-lg text-white1">
                 Go To App
               </button>
             </a>

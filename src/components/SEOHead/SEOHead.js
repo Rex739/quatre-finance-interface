@@ -38,7 +38,7 @@ const SEOHead = ({ title, description, url, ogImage }) => {
 SEOHead.defaultProps = {
   title: "",
   description:
-    "Quatre Finance - World's first ever story-based anime NFT project.",
+    "Quatre Finance - Enjoy Decentralised Protocols Built On The Blockchain",
   // url: 'https://kingdomofpandaria.com/',
   ogImage: "images/gallery/1.png",
 }

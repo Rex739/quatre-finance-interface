@@ -12,7 +12,7 @@ const Problems = () => {
       ].join(" ")}
     >
       {problemsData.map((data) => (
-        <div key={data.key}>
+        <div key={data.id}>
           <SectionHeader
             sectionTitle={data.sectionTitle}
             subTitle={data.subTitle}

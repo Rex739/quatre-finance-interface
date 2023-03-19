@@ -12,7 +12,7 @@ const MyApp = ({ Component, pageProps }) => {
   }
   return (
     <>
-      <SEOHead />
+      <SEOHead url={undefined} />
       <main>
         <Layout handleClick={handleClick} isClicked={isClicked}>
           <Component

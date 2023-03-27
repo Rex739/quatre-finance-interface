@@ -46,7 +46,7 @@ const TopBar = ({ isClicked, handleClick }) => {
               className="mx-[36.5px]"
               href="/#community"
               handleClick={handleClick}
-              children={"Commuinity"}
+              children={"Community"}
             ></ActiveLink>
           </div>
           <li className="hidden lg:flex">

@@ -41,7 +41,7 @@ const Hero = () => {
               className={[
                 "w-full h-[40px] m-0 mb-3 xss:mb-0 xss:w-[130px]",
                 "xss:h-[40px] lg:w-[312px] lg:h-[60px]",
-                "rounded-lg bg-orange xss:mr-[9px]",
+                "rounded-lg bg-orange xss:mr-[9px] underlineFromLeft",
               ].join(" ")}
             >
               Go To App

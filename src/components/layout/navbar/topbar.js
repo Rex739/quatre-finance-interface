@@ -1,12 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
 import ActiveLink from "./activeLink"
 import Link from "next/link"
 import React from "react"
 
 const TopBar = ({ isClicked, handleClick }) => {
   return (
-    <header className="bg-green1 py-5 lg:py-10 font-inter ">
+    <header className="bg-green1 py-5 lg:py-10 font-inter relative z-30 ">
       <nav className="wrapper">
         <ul className="flex items-center justify-between">
           <li>
@@ -51,7 +49,8 @@ const TopBar = ({ isClicked, handleClick }) => {
           </div>
           <li className="hidden lg:flex">
             <a href="">
-              <button className="font-bold bg-orange w-[174px] h-[60px] rounded-lg text-white1">
+              <button className={["underlineFromLeft", // css code in global.css
+                "font-bold bg-orange w-[174px] h-[60px] rounded-lg text-white1"].join(" ")}>
                 Go To App
               </button>
             </a>

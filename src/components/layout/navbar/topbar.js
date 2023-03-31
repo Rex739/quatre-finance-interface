@@ -42,7 +42,7 @@ const TopBar = ({ isClicked, handleClick }) => {
             ></ActiveLink>
             <ActiveLink
               className="mx-[36.5px]"
-              href="/#community"
+              href="/#footer"
               handleClick={handleClick}
               children={"Community"}
             ></ActiveLink>

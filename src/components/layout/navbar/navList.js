@@ -37,7 +37,7 @@ const NavList = ({ isClicked, handleClick }) => {
               ></ActiveLink>
               <ActiveLink
                 className=""
-                href="/#community"
+                href="/#footer"
                 handleClick={handleClick}
                 children={"Commuinity"}
               ></ActiveLink>

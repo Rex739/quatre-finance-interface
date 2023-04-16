@@ -31,26 +31,30 @@ const TopBar = ({ isClicked, handleClick }) => {
             <ActiveLink
               className="mx-[36.5px]"
               href="/"
-              handleClick={handleClick}
+              handleClick={undefined}
               children={"Home"}
             ></ActiveLink>
             <ActiveLink
               className="mx-[36.5px]"
-              href="/#learn"
-              handleClick={handleClick}
+              href="/https://quatre-finance-docs.vercel.app/"
+              handleClick={undefined}
               children={"Learn"}
             ></ActiveLink>
             <ActiveLink
               className="mx-[36.5px]"
               href="/#footer"
-              handleClick={handleClick}
+              handleClick={undefined}
               children={"Community"}
             ></ActiveLink>
           </div>
           <li className="hidden lg:flex">
             <a href="">
-              <button className={["underlineFromLeft", // css code in global.css
-                "font-bold bg-orange w-[174px] h-[60px] rounded-lg text-white1"].join(" ")}>
+              <button
+                className={[
+                  "underlineFromLeft", // css code in global.css
+                  "font-bold bg-orange w-[174px] h-[60px] rounded-lg text-white1",
+                ].join(" ")}
+              >
                 Go To App
               </button>
             </a>

@@ -31,7 +31,7 @@ const NavList = ({ isClicked, handleClick }) => {
               ></ActiveLink>
               <ActiveLink
                 className="mb-5"
-                href="/#learn"
+                href="https://quatre-finance-docs.vercel.app/"
                 handleClick={handleClick}
                 children={"Learn"}
               ></ActiveLink>

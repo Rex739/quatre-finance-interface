@@ -36,7 +36,7 @@ const TopBar = ({ isClicked, handleClick }) => {
             ></ActiveLink>
             <ActiveLink
               className="mx-[36.5px]"
-              href="/https://quatre-finance-docs.vercel.app/"
+              href="https://quatre-finance-docs.vercel.app/"
               handleClick={undefined}
               children={"Learn"}
             ></ActiveLink>

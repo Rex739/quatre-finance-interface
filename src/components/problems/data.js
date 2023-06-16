@@ -12,7 +12,7 @@ export const problemsData = [
   },
   {
     id: 2,
-    image: "images/problems/Inflation.svg",
+    image: "images/problems/interestRates.svg",
     problem: "Inflation",
     body: "Devastating effects of persistent inflation",
   },

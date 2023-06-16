@@ -36,7 +36,7 @@ export const problemsData = [
   },
   {
     id: 6,
-    image: "images/problems/indefiniteLockOfFunds.svg",
+    image: "images/problems/lockOfFunds.svg",
     problem: "Indefinite Lock of Funds",
     body: "Indefinite lock of funds on the blockchain plus inability to pass inheritance",
   },

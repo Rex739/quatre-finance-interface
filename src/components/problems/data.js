@@ -6,13 +6,13 @@ export const problemsData = [
   },
   {
     id: 1,
-    image: "images/problems/Security.svg",
+    image: "images/problems/security.svg",
     problem: "Security",
     body: "Security problems with open and decentralized operators",
   },
   {
     id: 2,
-    image: "images/problems/interestRates.svg",
+    image: "images/problems/inflation.svg",
     problem: "Inflation",
     body: "Devastating effects of persistent inflation",
   },
